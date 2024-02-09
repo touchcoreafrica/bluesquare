@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BRFirmaThin";
+  src: local("BRFirmaThin"),
+    url("/fonts/BRFirma/BRFirma-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRFirmaExtraLight";
+  src: local("BRFirmaExtraLight"),
+    url("/fonts/BRFirma/BRFirma-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRFirmaLight";
+  src: local("BRFirmaLight"),
+    ("/fonts/BRFirma/BRFirma-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRFirmaRegular";
+  src: local("BRFirmaRegular"),
+    url("/fonts/BRFirma/BRFirma-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRFirmaMedium";
+  src: local("BRFirmaMedium"),
+    url("/fonts/BRFirma/BRFirma-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRFirmaSemiBold";
+  src: local("BRFirmaSemiBold"),
+    url("/fonts/BRFirma/BRFirma-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRFirmaBold";
+  src: local("BRFirmaBold"),
+    ("/fonts/BRFirma/BRFirma-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BRFirmaBlack";
+  src: local("BRFirmaBlack"),
+    url("/fonts/BRFirma/BRFirma-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BRSonomaThin";
+  src: local("BRSonomaThin"),
+    url("/fonts/Sonoma/BRSonoma-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "BRSonomaExtraLight";
+  src: local("BRSonomaExtraLight"),
+    url("/fonts/Sonoma/BRSonoma-ExtraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "BRSonomaLight";
+  src: local("BRSonomaLight"),
+    url("/fonts/Sonoma/BRSonoma-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "BRSonomaRegular";
+  src: local("BRSonomaRegular"),
+    url("/fonts/Sonoma/BRSonoma-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "BRSonomaMedium";
+  src: local("BRSonomaMedium"),
+    url("/fonts/Sonoma/BRSonoma-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "BRSonomaSemiBold";
+  src: local("BRSonomaSemiBold"),
+    url("/fonts/Sonoma/BRSonoma-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "BRSonomaBold";
+  src: local("BRSonomaBold"),
+    url("/fonts/Sonoma/BRSonoma-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BRSonomaBlack";
+  src: local("BRSonomaBlack"),
+    url("/fonts/Sonoma/BRSonoma-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville"),
+    url("/fonts/Baskerville/BaskervilleBoldBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bodoni";
+  src: local("Bodoni"),
+    url("/fonts/Bodoni/BodoniFLF-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Didot";
+  src: local("Didot"), url("/fonts/DidotLTStd-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia"),
+    url("/fonts/Georgia/GeorgiaEstate-w15Mn.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hervia";
+  src: local("Hervia"),
+    url("/fonts/Hervia/HERVIA-Trial-BF6594b0eb59e9f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sevillana";
+  src: local("Sevillana"),
+    url("/fonts/Sevillana-Regular.ttf") format("truetype");
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  background-image: url("/assets/7-centrale-banner.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  /* Add your styles for banner content here */
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background 0.5s ease; /* Add a smooth transition effect */
+  pointer-events: none; /* Allows clicking through the overlay to the content below */
+}
+.parallax {
+  height: 100vh;
+  background: url("/assets/Sec5Bg.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+}
+.bodyFont {
+  font-family: BRFirmaRegular;
+}
+.headerFont {
+  font-family: "Didot";
+}
+.normal-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
