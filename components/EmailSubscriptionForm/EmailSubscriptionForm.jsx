@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import TextField from "../TextField/TextField";
+import { toast } from "react-toastify";
 
 const EmailSubscriptionForm = () => {
   const [email, setEmail] = useState("");
@@ -51,6 +52,7 @@ const EmailSubscriptionForm = () => {
       setIsSubscribed(status === "success");
       if (status) {
         setEmail("");
+        toast.success("You are successfully subscribe");
       }
     } catch (error) {
       setMessage("An error occurred. Please try again.");

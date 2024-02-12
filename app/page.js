@@ -394,7 +394,7 @@ export default function Home() {
 
       <section
         layout
-        className="px-4 md:px-24 py-10 flex flex-col gap-5 bg-black/10"
+        className="px-4 md:px-24 py-10 hidden flex flex-col gap-5 bg-black/10"
       >
         <div className="w-full flex justify-between items-center">
           <p className={`headerFont text-xl md:text-4xl`}>Instagram Feeds</p>

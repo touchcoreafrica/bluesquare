@@ -45,21 +45,21 @@ const ProjectMap = () => {
             </div>
             <div className={`flex md:grid gap-4 flex-col md:grid-cols-3`}>
               <ProjectListItem
-                link={"longonot-heights"}
+                link={"/projects/longonot-heights"}
                 name={"Longonot Heights"}
                 address={" Ikate, Elegushi, Lekki"}
                 startFrom={"$10,000"}
                 image={"/assets/LongonotHeightsList.png"}
               />
               <ProjectListItem
-                link={"quantum-place"}
+                link={"/projects/quantum-place"}
                 name={"Quantum Place"}
                 address={"Oniru, Victoria Island"}
                 startFrom={"$10,000"}
                 image={"/assets/QuantumPlaceList.png"}
               />
               <ProjectListItem
-                link={"lunar-court"}
+                link={"/projects/lunar-courts"}
                 name={"Lunar Court"}
                 address={"Oniru, Victoria Island"}
                 startFrom={"$10,000"}
@@ -78,28 +78,28 @@ const ProjectMap = () => {
             </div>
             <div className={`flex flex-col md:grid md:grid-cols-3 gap-4`}>
               <ProjectListItem
-                link={"cove-towers"}
+                link={"/projects/cove-towers"}
                 name={"Cove Towers"}
                 address={"Lekki, Lagos"}
                 startFrom={"$10,000"}
                 image={"/assets/CoveTowersList.png"}
               />
               <ProjectListItem
-                link={"7-centrale"}
+                link={"/projects/7-centrale"}
                 name={"7 Centrale Residences"}
                 address={"Durosimi Etti, Lekki Phase 1"}
                 startFrom={"$10,000"}
                 image={"/assets/7CentraleList.png"}
               />
               <ProjectListItem
-                link={"gazania-park"}
+                link={"/projects/gazania-park"}
                 name={"Gazania Park"}
                 address={"Periwinkle Estate, Lekki Phase 1"}
                 startFrom={"$10,000"}
                 image={"/assets/GazaniaParkList.png"}
               />
               <ProjectListItem
-                link={"the-jade-manor"}
+                link={"/projects/the-jade-manor"}
                 name={"The Jade Manor"}
                 address={"Onigefun street, Oniru, VI"}
                 startFrom={"$10,000"}
