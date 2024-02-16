@@ -35,19 +35,23 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col text-white/60 gap-10">
-              <div
-                className={`grid grid-cols-2 gap-10 md:flex justify-between`}
-              >
+              <div className={`grid grid-cols-2 gap-10 md:flex justify-end`}>
                 <div className="flex flex-col gap-4">
                   <Link href={"/about-us"}>About us</Link>
-                  <Link href={""}>Services</Link>
-                  <Link href={""}>Projects</Link>
-                  <Link href={""}>Virtual Tour</Link>
-                  <Link href={""}>Resources</Link>
-                  <Link href={""}>FAQs</Link>
+                  {/* <Link href={""}>Services</Link> */}
+                  {/* <Link href={""}>Projects</Link> */}
+                  <Link
+                    href={
+                      "https://calendly.com/infobluesquareng/gazania-park?month=2024-02"
+                    }
+                  >
+                    Virtual Tour
+                  </Link>
+                  <Link href={"resources"}>Resources</Link>
+                  <Link href={"FAQ"}>FAQs</Link>
                   <Link href={"contact-us"}>Contact Us</Link>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="hidden flex-col gap-4">
                   <p>Legal Terms & Conditions</p>
                   <Link href={"/legal"}>Privacy Policy</Link>
                   <Link href={"/legal"}>Cookie Policy</Link>
@@ -56,10 +60,18 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <p>Socials</p>
-                  <Link href={""}>Facebook</Link>
-                  <Link href={""}>Twitter</Link>
-                  <Link href={""}>Linkedin</Link>
-                  <Link href={""}>Instagram</Link>
+                  <Link href={"https://www.facebook.com/Bluesquareng/"}>
+                    Facebook
+                  </Link>
+                  <Link href={"https://twitter.com/Bluesquareikoyi"}>
+                    Twitter
+                  </Link>
+                  <Link href={"https://www.linkedin.com/company/bluesquareng"}>
+                    Linkedin
+                  </Link>
+                  <Link href={"https://www.instagram.com/bluesquareng/"}>
+                    Instagram
+                  </Link>
                 </div>
               </div>
               <p className={` text-center w-full`}>
