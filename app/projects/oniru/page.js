@@ -99,6 +99,7 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=1079nvwoVl0o3MATifrBitjukIOdeP95X"
             }
@@ -556,11 +557,13 @@ export default function Page() {
               Book a tour
             </Button>
           </Link>
-          <Button
+          <Link
+            target="_blank"
+            href={""}
             className={`font-bold bodyFont w-full border-[2px] border-[#26282B] md:p-4 text-black/90 text-sm`}
           >
             Download brochure
-          </Button>
+          </Link>
         </div>
         <div className={`md:flex flex-col ${!card ? "hidden" : ""}`}>
           <div className={`hidden gap-2 p-2`}>

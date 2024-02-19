@@ -105,8 +105,9 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            target="_blank"
             href={
-              "https://drive.google.com/uc?export=download&id=1079nvwoVl0o3MATifrBitjukIOdeP95X"
+              "https://dashboard.mailerlite.com/forms/415080/113618332504033207/share"
             }
             className={`font-bold bodyFont text-center w-full border-[2px] border-[#26282B] p-4 text-black/90`}
           >
@@ -563,8 +564,9 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            target="_blank"
             href={
-              "https://drive.google.com/uc?export=download&id=1079nvwoVl0o3MATifrBitjukIOdeP95X"
+              "https://dashboard.mailerlite.com/forms/415080/113618332504033207/share"
             }
             className={`font-bold p-4 text-center bodyFont w-full border-[2px] border-[#26282B] md:p-4 text-black/90 text-sm`}
           >

@@ -104,6 +104,7 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=1im8E_h9cZTMFWTtKNqJVi_f9z6C21xha"
             }
@@ -576,6 +577,7 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=1im8E_h9cZTMFWTtKNqJVi_f9z6C21xha"
             }
