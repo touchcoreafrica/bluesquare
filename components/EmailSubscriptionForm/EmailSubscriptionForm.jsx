@@ -50,9 +50,11 @@ const EmailSubscriptionForm = () => {
       setStatus(status);
       setIsLoading(false);
       setIsSubscribed(status === "success");
-      if (status) {
+      if (status === "success") {
         setEmail("");
-        toast.success("You are successfully subscribe");
+        toast.success("You have successfully subscribed");
+      } else {
+        toast.error(message);
       }
     } catch (error) {
       setMessage("An error occurred. Please try again.");
