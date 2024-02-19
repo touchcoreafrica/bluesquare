@@ -387,10 +387,10 @@ const Header = ({ className }) => {
                   }
                 }}
               >
-                <p>{headerMenu.label}</p>
+                <p className="font-bold text-lg">{headerMenu.label}</p>
                 {headerMenu.content ? (
                   <KeyboardArrowDownIcon
-                    className={"text-xs lg:text-[15px] 2xl:text-base"}
+                    className={"text-xs lg:text-[15px] 2xl:text-base font-bold"}
                   />
                 ) : null}
               </div>

@@ -13,10 +13,10 @@ const ContactUs = () => {
     setIsSubmitting(true);
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        "service_xu3donk",
+        "template_ev31ckt",
         e.target,
-        process.env.REACT_APP_PUBLIC_KEY
+        "gnsdNKS6z8dMdokCg"
       )
       .then(
         (result) => {
@@ -44,15 +44,17 @@ const ContactUs = () => {
         <div className="flex flex-col w-1/2">
           <p className={` text-sm text-[#CAA969]`}>FIRST NAME</p>
           <TextField
+            name={"first_name"}
             className={"border-[1px] bg-[#f8f8f8] py-4"}
-            placeholder={"Chiemena"}
+            placeholder={"e.g Jhon"}
           />
         </div>
         <div className="flex flex-col w-1/2">
           <p className={` text-sm text-[#CAA969]`}>LAST NAME</p>
           <TextField
+            name={"last_name"}
             className={"border-[1px] bg-[#f8f8f8] py-4"}
-            placeholder={"Okafor"}
+            placeholder={"e.g Doe"}
           />
         </div>
       </div>
@@ -60,21 +62,24 @@ const ContactUs = () => {
         <div className="flex flex-col w-1/2">
           <p className={` text-sm text-[#CAA969]`}>EMAIL</p>
           <TextField
+            name={"email"}
             className={"border-[1px] bg-[#f8f8f8] py-4"}
-            placeholder={"email"}
+            placeholder={"e.g jhon.doe@gmail.com"}
           />
         </div>
         <div className="flex flex-col w-1/2">
           <p className={` text-sm text-[#CAA969]`}>PHONE NUMBER</p>
           <TextField
+            name={"phone"}
             className={"border-[1px] bg-[#f8f8f8] py-4"}
-            placeholder={"phone number"}
+            placeholder={"e.g 08031234878"}
           />
         </div>
       </div>
       <div className="flex flex-col">
         <p className={` text-sm text-[#CAA969]`}>MESSAGE</p>
         <textarea
+          name={"message"}
           type={"text"}
           rows={7}
           className={"border-[1px] bg-[#f8f8f8]"}
@@ -86,6 +91,7 @@ const ContactUs = () => {
         <div className=""></div>
       </div>
       <Button
+        type="submit"
         disable={isSubmitting}
         className={`bodyFont font-bold text-white w-full bg-[#26282B] py-4`}
       >
