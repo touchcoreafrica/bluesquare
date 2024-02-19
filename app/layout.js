@@ -15,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head></head>
       <AOSInit />
       <body className={`${inter.className} bg-gray-800`}>
         <ToastContainer

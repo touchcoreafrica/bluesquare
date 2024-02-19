@@ -7,12 +7,13 @@ import Footer from "@/components/Footer/Footer";
 import TextField from "@/components/TextField/TextField";
 import Button from "@/components/Button/Button";
 import Link from "next/link";
+import ContactUs from "@/components/ContactUs/ContactUs";
 
 const page = () => {
   return (
     <div className={`min-h-screen w-full bg-white`}>
-      <section className="w-full flex flex-col bg-[#f8f8f8] p-4 md:px-20 md:py-32">
-        <h1 className={`headerFont text-5xl`}>Contact Us</h1>
+      <section className="w-full flex flex-col bg-[url('/assets/contact-banner.png')] bg-cover p-4 md:px-20 md:py-32 gap-4">
+        <h1 className={`headerFont text-5xl text-white`}>Contact Us</h1>
         <div className="flex md:flex-row flex-col gap-4">
           <div className="flex flex-col bg-white p-4 w-full md:w-1/4">
             <div className="flex items-center justify-center p-2 bg-[#D1A55C1A] w-fit">
@@ -118,60 +119,9 @@ const page = () => {
               <p>Message us on X(Twitter)</p>
             </Link>
           </div>
-          <div className="flex flex-col gap-2 w-full">
-            <div className="flex gap-4 w-full">
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>FIRST NAME</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"Chiemena"}
-                />
-              </div>
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>LAST NAME</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"Okafor"}
-                />
-              </div>
-            </div>
-            <div className="flex gap-4 w-full">
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>EMAIL</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"email"}
-                />
-              </div>
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>PHONE NUMBER</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"phone number"}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <p className={` text-sm text-[#CAA969]`}>MESSAGE</p>
-              <textarea
-                type={"text"}
-                rows={7}
-                className={"border-[1px] bg-[#f8f8f8]"}
-                placeholder={"Message"}
-              />
-            </div>
-            <div className="flex gap-10">
-              <p className="text-black/60">How do you want to be replied?</p>
-              <div className=""></div>
-            </div>
-            <Button
-              className={`bodyFont font-bold text-white w-full bg-[#26282B] py-4`}
-            >
-              Send Message
-            </Button>
-          </div>
+          <ContactUs />
         </div>
-        <div className="w-full h-[400px] md:h-auto md:w-1/2 bg-[url('/assets/addressMap.png')]"></div>
+        <div className="w-full h-[400px] md:h-auto md:w-1/2 bg-[url('/assets/contact-map.png')]"></div>
       </section>
       <Footer />
     </div>
