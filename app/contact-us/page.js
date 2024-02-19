@@ -50,7 +50,6 @@ const page = () => {
               className={`bodyFont font-bold flex flex-col gap-3 bg-[#f8f8f8] p-2 text-black/60`}
             >
               <p>+234 817 777 1590</p>
-              <p>+234 916 122 5266</p>
               <p>+234 916 944 8069</p>
             </div>
           </div>

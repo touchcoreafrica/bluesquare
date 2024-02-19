@@ -27,7 +27,6 @@ const Footer = () => {
               </div>
               <div className={`flex flex-col bodyFont text-white/60 gap-1`}>
                 <p>+234 817 777 1590</p>
-                <p>+234 916 122 5266</p>
                 <p>+234 916 944 8069</p>
                 <p className={`border-y-[1px] pt-5 w-fit`}>
                   info@bluesquareng.com
@@ -41,6 +40,7 @@ const Footer = () => {
                   {/* <Link href={""}>Services</Link> */}
                   {/* <Link href={""}>Projects</Link> */}
                   <Link
+                    target="_blank"
                     href={
                       "https://calendly.com/infobluesquareng/gazania-park?month=2024-02"
                     }
@@ -60,16 +60,28 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <p>Socials</p>
-                  <Link href={"https://www.facebook.com/Bluesquareng/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.facebook.com/Bluesquareng/"}
+                  >
                     Facebook
                   </Link>
-                  <Link href={"https://twitter.com/Bluesquareikoyi"}>
+                  <Link
+                    target="_blank"
+                    href={"https://twitter.com/Bluesquareikoyi"}
+                  >
                     Twitter
                   </Link>
-                  <Link href={"https://www.linkedin.com/company/bluesquareng"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.linkedin.com/company/bluesquareng"}
+                  >
                     Linkedin
                   </Link>
-                  <Link href={"https://www.instagram.com/bluesquareng/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.instagram.com/bluesquareng/"}
+                  >
                     Instagram
                   </Link>
                 </div>
