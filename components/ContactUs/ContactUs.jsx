@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../Button/Button";
 import TextField from "../TextField/TextField";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -21,6 +22,7 @@ const ContactUs = () => {
       .then(
         (result) => {
           setStateMessage("Message sent!");
+          toast.success("Message sent!");
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage(null);
@@ -28,6 +30,7 @@ const ContactUs = () => {
         },
         (error) => {
           setStateMessage("Something went wrong, please try again later");
+          toast.error("Something went wrong, please try again later");
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage(null);
@@ -46,7 +49,7 @@ const ContactUs = () => {
           <TextField
             name={"first_name"}
             className={"border-[1px] bg-[#f8f8f8] py-4"}
-            placeholder={"e.g Jhon"}
+            placeholder={"e.g John"}
           />
         </div>
         <div className="flex flex-col w-1/2">
