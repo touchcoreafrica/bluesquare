@@ -42,7 +42,10 @@ const ContactUs = () => {
     e.target.reset();
   };
   return (
-    <form className="flex flex-col gap-2 w-full" onSubmit={sendEmail}>
+    <form
+      className="flex flex-col gap-2 w-full justify-between"
+      onSubmit={sendEmail}
+    >
       <div className="flex gap-4 w-full">
         <div className="flex flex-col w-1/2">
           <p className={` text-sm text-[#CAA969]`}>FIRST NAME</p>
@@ -96,7 +99,7 @@ const ContactUs = () => {
       <Button
         type="submit"
         disable={isSubmitting}
-        className={`bodyFont font-bold text-white w-full bg-[#26282B] py-4`}
+        className={`bodyFont font-bold text-white w-full bg-[#D1A55C] py-4`}
       >
         Send Message
       </Button>
