@@ -158,7 +158,7 @@ const Page = () => {
             data-aos-duration="500"
           >
             <p
-              className={`headerFont text-center text-white text-2xl md:text-5xl`}
+              className={`headerFont text-center text-white text-2xl md:text-4xl`}
             >
               Ready to take your real estate career to new heights? Submit your
               <br className="hidden md:block" />
@@ -170,13 +170,13 @@ const Page = () => {
               onClick={() => {
                 setShowThesis(true);
               }}
-              className={`bodyFont text-white px-8 py-4 w-full cursor-pointer md:w-fit z-50`}
+              className={`bodyFont font-bold text-white px-8 py-4 w-full cursor-pointer md:w-fit z-50`}
               style={{
                 background:
                   "linear-gradient(78deg, #835A03 0%, #CAA969 66.54%, #835A03 100%)",
               }}
             >
-              Find out more
+              Join Us Today
             </Button>
           </div>
         </section>
