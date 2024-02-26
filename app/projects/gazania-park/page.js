@@ -94,7 +94,10 @@ export default function Page() {
       <section className=" flex sticky top-40 pr-20 md:mb-[-300px] w-fit self-end">
         {/* <div className="w-[70%]"></div> */}
         <div className="shadow-2xl hidden sticky top-10 p-4 md:flex flex-col gap-2 bg-white my-[-100px]  w-[27vw]">
-          <Link href={"https://calendly.com/infobluesquareng/gazania-park"}>
+          <Link
+            className="hidden"
+            href={"https://calendly.com/infobluesquareng/gazania-park"}
+          >
             <Button
               onClick={() => {
                 setShowTour(true);
@@ -109,7 +112,7 @@ export default function Page() {
             href={
               "https://dashboard.mailerlite.com/forms/415080/113618332504033207/share"
             }
-            className={`font-bold bodyFont text-center w-full border-[2px] border-[#26282B] p-4 text-black/90`}
+            className={`hidden font-bold bodyFont text-center w-full border-[2px] border-[#26282B] p-4 text-black/90`}
           >
             Download brochure
           </Link>
@@ -552,7 +555,7 @@ export default function Page() {
 
           <p className={`headerFont text-2xl text-[#CAA969]`}>Gazania Park</p>
         </div>
-        <div className={`flex flex-col gap-2`}>
+        <div className={`hidden flex-col gap-2`}>
           <Link href={"https://calendly.com/infobluesquareng/gazania-park"}>
             <Button
               onClick={() => {
