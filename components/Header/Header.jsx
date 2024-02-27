@@ -33,7 +33,7 @@ const Header = ({ className }) => {
   const [scrollY, setScrollY] = useState({
     current: 0,
   });
-  const [paddingTop, setPaddingTop] = useState(); //animation revert paddingTop initia 2.5 and uncomment useEffection for animation
+  const [paddingTop, setPaddingTop] = useState(0); //animation revert paddingTop initia 2.5 and uncomment useEffection for animation
   const [mouthOut, setMouthOut] = useState(true);
 
   const handleClick = (event, key) => {
