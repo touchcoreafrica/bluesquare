@@ -33,7 +33,7 @@ const Header = ({ className }) => {
   const [scrollY, setScrollY] = useState({
     current: 0,
   });
-  const [paddingTop, setPaddingTop] = useState(2.5);
+  const [paddingTop, setPaddingTop] = useState(); //animation revert paddingTop initia 2.5 and uncomment useEffection for animation
   const [mouthOut, setMouthOut] = useState(true);
 
   const handleClick = (event, key) => {
@@ -300,7 +300,8 @@ const Header = ({ className }) => {
     },
   ];
 
-  useEffect(() => {
+  {
+    /* useEffect(() => {
     const handleScroll = () => {
       setScrollY({ current: window.scrollY });
     };
@@ -320,7 +321,8 @@ const Header = ({ className }) => {
       );
       console.log(paddingTop);
     }
-  }, [scrollY?.current]);
+  }, [scrollY?.current]); */
+  }
 
   return (
     <>

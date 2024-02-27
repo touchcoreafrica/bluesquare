@@ -371,7 +371,7 @@ const Page = () => {
           >
             <div className="hidden w-2/12 md:flex flex-col gap-4"></div>
             <div className="md:w-10/12 flex flex-col gap-5 ">
-              <h1 className={`headerFont text-2xl md:text-3xl`}>Conslusion</h1>
+              <h1 className={`headerFont text-2xl md:text-3xl`}>Conclusion</h1>
               <div className="flex flex-col gap-4">
                 <p
                   className={`bodyFont text-black/60 text-[18px] leading-[190%]`}
