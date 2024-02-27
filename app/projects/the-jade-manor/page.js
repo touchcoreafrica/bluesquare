@@ -79,7 +79,7 @@ export default function Page() {
           <h1
             className={`headerFont text-2xl md:text-4xl text-center text-[#DAB797]`}
           >
-            Creating beautiful communities
+            Luxury Living in Oniru
           </h1>
         </div>
       </section>
@@ -138,8 +138,7 @@ export default function Page() {
             <div className="flex flex-col">
               <p className={`bodyFont font-bold`}>Apartments</p>
               <p className={`text-sm text-[#6D6E71]`}>
-                Luxury 1, 2 and 3 bedrooms with BQ, 3 and 4 bedroom maisonnette
-                with BQ
+                Luxury 4-bedroom terraces
               </p>
             </div>
           </div>

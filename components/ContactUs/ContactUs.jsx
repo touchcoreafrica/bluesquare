@@ -93,7 +93,7 @@ const ContactUs = () => {
         />
       </div>
       <div className="flex gap-10">
-        <p className="text-black/60">How do you want to be replied?</p>
+        <p className="hidden text-black/60">How do you want to be replied?</p>
         <div className=""></div>
       </div>
       <Button

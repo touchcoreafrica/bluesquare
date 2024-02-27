@@ -149,8 +149,7 @@ export default function Page() {
             <div className="flex flex-col">
               <p className={`font-bold bodyFont`}>Apartments</p>
               <p className={`text-sm text-[#6D6E71]`}>
-                Luxury 1, 2 and 3 bedrooms with BQ, 3 and 4 bedroom maisonnette
-                with BQ
+                Luxury 1, 2, and 3-bedroom apartments with staff quarters
               </p>
             </div>
           </div>
@@ -199,7 +198,7 @@ export default function Page() {
         </div>
       </section>
       <section className="flex items-center md:px-20 p-4 overflow-visible py-5 md:py-20 gap-4">
-        <div className="flex flex-col gap-5 md:w-[70%]">
+        <div className="flex flex-col gap-5 md:w-[70%] md:pt-[120px]">
           <div className="flex flex-col">
             <p className={`text-[#6D6E71] `}>
               Periwinkle Estate, Lekki Phase 1

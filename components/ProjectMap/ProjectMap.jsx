@@ -24,7 +24,7 @@ const ProjectMap = () => {
         >
           <p className={`headerFont text-white text-4xl`}>Projects</p>
           <Button
-            className={`bg-[#F8F8F8] flex gap-1 p-4`}
+            className={`hidden bg-[#F8F8F8] gap-1 p-4`}
             onClick={() => {
               setView("map");
             }}

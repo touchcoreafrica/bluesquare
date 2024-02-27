@@ -11,6 +11,7 @@ import Link from "next/link";
 import Modal from "@/components/Modal/Modal";
 import Button from "@/components/Button/Button";
 import TextField from "@/components/TextField/TextField";
+import ContactUs from "@/components/ContactUs/ContactUs";
 
 const Page = () => {
   const [showThesis, setShowThesis] = useState(false);
@@ -203,75 +204,7 @@ const Page = () => {
           </div>
           <span className="w-full h-[1px] bg-[#D1A55C]"></span>
 
-          <div className="flex flex-col gap-2 w-full">
-            <div className="flex gap-4 w-full">
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>FIRST NAME</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"Chiemena"}
-                />
-              </div>
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>LAST NAME</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"Okafor"}
-                />
-              </div>
-            </div>
-            <div className="flex gap-4 w-full">
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>EMAIL</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"email"}
-                />
-              </div>
-              <div className="flex flex-col w-1/2">
-                <p className={` text-sm text-[#CAA969]`}>PHONE NUMBER</p>
-                <TextField
-                  className={"border-[1px] bg-[#f8f8f8] py-4"}
-                  placeholder={"phone number"}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <p className={` text-sm text-[#CAA969]`}>MESSAGE</p>
-              <textarea
-                type={"text"}
-                rows={7}
-                className={"border-[1px] bg-[#f8f8f8]"}
-                placeholder={"Message"}
-              />
-            </div>
-            <div className="flex flex-col gap-1 ">
-              <p className="text-[#D1A55C]">UPLOAD CV</p>
-              <Button className="flex gap-2 border-[1px] w-fit p-2 bg-[#f8f8f8]">
-                <Image src={"/assets/file.svg"} alt={"file"} />
-                <p className="text-black/50">.pdf</p>
-              </Button>
-            </div>
-
-            <div className="flex gap-10 items-center">
-              <p className="text-black/80">How do you want to be replied?</p>
-              <div className="flex gap-2">
-                <div className="border-[1px] border-[#03A028] bg-[#E1FFE8] p-2 flex gap-2 items-center justify-center">
-                  <p>email</p>
-                  <TextField type="radio" />
-                </div>
-                <div className="border-[1px] border-[#9AA0A2] bg-[#f8f8f8] py-2 px-4 flex gap-2 items-center justify-center">
-                  <p>call</p>
-                  <TextField type="radio" />
-                </div>
-              </div>
-            </div>
-            <Button
-              className={`bodyFont font-bold text-white w-full bg-[#26282B] py-4`}
-            >
-              Send Message
-            </Button>
-          </div>
+          <ContactUs />
         </div>
       </Modal>
     </div>
