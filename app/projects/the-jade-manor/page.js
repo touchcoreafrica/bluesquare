@@ -19,6 +19,7 @@ import Link from "next/link";
 
 export default function Page() {
   const [card, setCard] = useState(false);
+  const [showPlan, setShowPlan] = useState(false);
   const [showTour, setShowTour] = useState(false);
   const [showThesis, setShowThesis] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -99,7 +100,7 @@ export default function Page() {
           <Link
             target="_blank"
             href={
-              "https://dashboard.mailerlite.com/forms/415080/113618355437437970/share"
+              "https://drive.google.com/uc?export=download&id=175K_a7v-H9NHe59R_biG2NU5kCLYeigc"
             }
             className={`bodyFont font-bold text-center w-full border-[2px] border-[#26282B] p-4 text-black/90`}
           >
@@ -154,13 +155,13 @@ export default function Page() {
               <p className={`bodyFont font-bold`}>Payment Schedule</p>
               <p className={`text-sm`}>
                 Now selling{" "}
-                <Link
-                  href={
-                    "https://drive.google.com/file/d/1yNYlx4k-4ZyMCauXUflebRxVemJDiy20/view?usp=drive_link"
-                  }
+                <Button
+                  onClick={() => {
+                    setShowPlan(true);
+                  }}
                 >
                   <u className="text-blue-500">view payment schedule</u>
-                </Link>
+                </Button>
               </p>
             </div>
           </div>
@@ -509,7 +510,7 @@ export default function Page() {
           <Link
             target="_blank"
             href={
-              "https://dashboard.mailerlite.com/forms/415080/113618355437437970/share"
+              "https://drive.google.com/uc?export=download&id=175K_a7v-H9NHe59R_biG2NU5kCLYeigc"
             }
             className={`bodyFont font-bold w-full border-[2px] border-[#26282B] text-center p-4 text-black/90 text-sm`}
           >
@@ -567,14 +568,14 @@ export default function Page() {
               <p className={`bodyFont font-bold`}>Payment Schedule</p>
               <p className={`text-sm`}>
                 <span>Now Selling</span>{" "}
-                <Link
+                <Button
                   className={`text-sm text-blue-600 underline`}
-                  href={
-                    "https://drive.google.com/file/d/1yNYlx4k-4ZyMCauXUflebRxVemJDiy20/view?usp=drive_link"
-                  }
+                  onClick={() => {
+                    setShowPlan(true);
+                  }}
                 >
                   view payment schedule
-                </Link>
+                </Button>
               </p>
             </div>
           </div>
@@ -803,6 +804,14 @@ export default function Page() {
             Book a virtual tour
           </Link>
         </div>
+      </Modal>
+      <Modal
+        isVisible={showPlan}
+        onClose={() => {
+          setShowPlan(!showPlan);
+        }}
+      >
+        <Image alt={"plan"} src={"/assets/THE_JADE_MANOR_PAYMENT_PLAN.jpeg"} />
       </Modal>
     </div>
   );

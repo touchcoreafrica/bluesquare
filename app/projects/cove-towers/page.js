@@ -20,6 +20,7 @@ import Link from "next/link";
 export default function Page() {
   const [showTour, setShowTour] = useState(false);
   const [showThesis, setShowThesis] = useState(false);
+  const [showPlan, setShowPlan] = useState(false);
   const [card, setCard] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const controls = useAnimation();
@@ -93,10 +94,19 @@ export default function Page() {
               Book a tour
             </Button>
           </Link>
-          <Link
+          {/* <Link
             target="_blank"
             href={
               "https://dashboard.mailerlite.com/forms/415080/113618332504033207/share"
+            }
+            className={`font-bold bodyFont text-center w-full border-[2px] border-[#26282B] p-4 text-black/90`}
+          >
+            Download brochure
+          </Link> */}
+          <Link
+            target="_blank"
+            href={
+              "https://drive.google.com/uc?export=download&id=19FtwPD-qwan76NEJMxMZaIxWYr4DSxnQ"
             }
             className={`font-bold bodyFont text-center w-full border-[2px] border-[#26282B] p-4 text-black/90`}
           >
@@ -151,13 +161,13 @@ export default function Page() {
               <p className={`font-bold bodyFont`}>Payment Schedule</p>
               <p className={`text-sm`}>
                 Now selling{" "}
-                <Link
-                  href={
-                    "https://drive.google.com/file/d/12Qtfm5xVkNz4NhXAhxhMlTSNrZswVmDG/view?usp=drive_link"
-                  }
+                <Button
+                  onClick={() => {
+                    setShowPlan(true);
+                  }}
                 >
                   <u className="text-blue-500">view payment schedule</u>
-                </Link>
+                </Button>
               </p>
             </div>
           </div>
@@ -500,7 +510,7 @@ export default function Page() {
           <Link
             target="_blank"
             href={
-              "https://dashboard.mailerlite.com/forms/415080/113618332504033207/share"
+              "https://drive.google.com/uc?export=download&id=19FtwPD-qwan76NEJMxMZaIxWYr4DSxnQ"
             }
             className={`font-bold bodyFont text-center w-full border-[2px] p-4 border-[#26282B] md:p-4 text-black/90 text-sm`}
           >
@@ -558,14 +568,14 @@ export default function Page() {
 
               <p className={`text-sm`}>
                 <span>Now Selling</span>{" "}
-                <Link
+                <Button
                   className={` text-blue-600 underline`}
-                  href={
-                    "https://drive.google.com/file/d/12Qtfm5xVkNz4NhXAhxhMlTSNrZswVmDG/view?usp=drive_link"
-                  }
+                  onClick={() => {
+                    setShowPlan(true);
+                  }}
                 >
                   view payment schedule
-                </Link>
+                </Button>
               </p>
             </div>
           </div>
@@ -781,6 +791,14 @@ export default function Page() {
           </div>
           <span className="h-[2px] bg-[#D1A55C] w-full"></span>
         </div>
+      </Modal>
+      <Modal
+        isVisible={showPlan}
+        onClose={() => {
+          setShowPlan(!showPlan);
+        }}
+      >
+        <Image alt={"plan"} src={"/assets/COVE_TOWERS_PAYMENT_PLAN.jpg"} />
       </Modal>
     </div>
   );
