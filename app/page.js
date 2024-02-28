@@ -97,7 +97,7 @@ export default function Home() {
           initial={{ background: "rgba(0, 0, 0, 0)" }}
           animate={controls}
         ></motion.div>
-        <div className="flex flex-col items-center justify-center bg-[#000000]/40 p-4 gap-4">
+        <div className="flex flex-col items-center justify-center p-4 gap-4">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
           <p className="headerFont text-white text-4xl md:text-7xl font-black ">
             Your key to <br /> luxury living
