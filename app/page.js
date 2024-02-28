@@ -97,11 +97,21 @@ export default function Home() {
           initial={{ background: "rgba(0, 0, 0, 0)" }}
           animate={controls}
         ></motion.div>
-        <div className="flex flex-col items-center justify-center bg-[#000000]/40 p-4">
-          <p className="text-[#D1A55C] font-bold">Blue Square</p>
-          <p className="headerFont text-white text-5xl font-black ">
-            Your key to luxury living
+        <div className="flex flex-col items-center justify-center bg-[#000000]/40 p-4 gap-4">
+          <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
+          <p className="headerFont text-white text-4xl md:text-7xl font-black ">
+            Your key to <br /> luxury living
           </p>
+          <Link
+            href={"/about-us"}
+            className={`bodyFont text-white px-8 py-4 w-full cursor-pointer md:w-fit z-50`}
+            style={{
+              background:
+                "linear-gradient(78deg, #835A03 0%, #CAA969 66.54%, #835A03 100%)",
+            }}
+          >
+            Learn More
+          </Link>
         </div>
         <div className=" flex md:gap-20 flex-col mb-10 md:mb-40 mr-5 md:mr-20 items-end">
           <div className="hidden  border-[20px] border-[#CAA969] h-60 w-72 bg-black/50"></div>
