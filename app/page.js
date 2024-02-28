@@ -99,7 +99,7 @@ export default function Home() {
         ></motion.div>
         <div className="flex flex-col items-center justify-center p-4 gap-4">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
-          <p className="headerFont text-white text-4xl md:text-7xl font-black ">
+          <p className="headerFont text-white text-4xl md:text-7xl font-black text-center">
             Your key to <br /> luxury living
           </p>
           <Link
