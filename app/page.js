@@ -100,7 +100,10 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center p-4 gap-4">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
           <p className="headerFont text-white text-4xl md:text-7xl font-black text-center">
-            Your key to <br /> luxury living
+            Blue Square are Limited
+          </p>
+          <p className="headerFont text-white text-3xl md:text-5xl font-black text-center">
+            ...Your key to luxury living
           </p>
           <Link
             href={"/about-us"}
@@ -181,7 +184,7 @@ export default function Home() {
             backgroundImage: `url(${sectionThreeData[sectionThree].bg})`,
           }}
         >
-          <div className="flex p-5 md:p-10">
+          <div className="hidden p-5 md:p-10">
             <button
               onClick={() => {
                 setSectionThree(0);
@@ -276,7 +279,7 @@ export default function Home() {
             backgroundImage: `url(${sectionFourData[sectionFour].bg})`,
           }}
         >
-          <div className="flex p-10">
+          <div className="hidden p-10">
             <button
               onClick={() => {
                 setSectionThree(0);
@@ -305,7 +308,7 @@ export default function Home() {
             backgroundImage: `url(${sectionFiveData[sectionFive].bg})`,
           }}
         >
-          <div className="flex p-5 md:p-10">
+          <div className="hidden p-5 md:p-10">
             <button
               onClick={() => {
                 setSectionFive(0);
