@@ -104,7 +104,7 @@ export default function Home() {
           </p>
           // <p className="headerFont text-white text-3xl md:text-5xl font-black text-center">
           //   ...Your key to luxury living
-          </p>
+          // </p>
           <Link
             href={"/about-us"}
             className={`bodyFont text-white px-8 py-4 w-full cursor-pointer md:w-fit z-50`}
