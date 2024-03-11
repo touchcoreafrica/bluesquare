@@ -100,10 +100,10 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center p-4 gap-4">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
           <p className="headerFont text-white text-4xl md:text-7xl font-black text-center">
-            Blue Square are Limited
+            Your key to luxury living
           </p>
-          <p className="headerFont text-white text-3xl md:text-5xl font-black text-center">
-            ...Your key to luxury living
+          // <p className="headerFont text-white text-3xl md:text-5xl font-black text-center">
+          //   ...Your key to luxury living
           </p>
           <Link
             href={"/about-us"}
