@@ -266,7 +266,7 @@ const Page = () => {
                 className={"w-full"}
                 pic={"/assets/blank.png"}
                 detail={
-                  "Gbemisola is a seasoned Sales professional with over 20 years of experience. She is highly motivated with extensive customer service and sales experienc. She has a track record of driving increased sales, improving buying experience and elevating the company profile with target market. A team player extraordinaire, resourceful, hardworking and result-oriented."
+                  "Gbemisola is a seasoned Sales professional with over 20 years of experience. She is highly motivated with extensive customer service and sales experience. She has a track record of driving increased sales, improving buying experience and elevating the company profile with target market. A team player extraordinaire, resourceful, hardworking and result-oriented."
                 }
               />
               <TeamCard
