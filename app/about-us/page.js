@@ -142,11 +142,7 @@ const Page = () => {
                 oriented destination and a fulfilling lifestyle with high yield
                 property investment that consistently exceeds expected returns.
               </p>
-              <iframe
-                src={"https://youtube.com/embed/UYAGAYimxDQ?autoplay=0"}
-                allow="autoplay"
-                className={` h-[350px] md:h-[400px] w-full`}
-              ></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iq_163TmBN0?si=gPVzcbVJmIBaKGhB&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className="flex flex-col md:flex-row flex-wrap pt-5 gap-5 justify-between">
               <div className="flex flex-col gap-5 md:w-[48%] md:mb-20">
