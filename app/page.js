@@ -86,8 +86,11 @@ export default function Home() {
       <div
         className={`absolute top-0 bg-cover min-h-screen bg-origin-content w-full bg-no-repeat`}
         style={{
-          backgroundImage: `url(${slider ? slider[sectionOne] : null})`,
+          backgroundImage: `url(/estate1.png)`,
         }}
+        // style={{
+        //   backgroundImage: `url(${slider ? slider[sectionOne] : null})`,
+        // }}
       ></div>
       <section
         className={`relative bg-cover min-h-screen bg-origin-content w-full bg-no-repeat flex items-center justify-center`}
@@ -97,7 +100,7 @@ export default function Home() {
           initial={{ background: "rgba(0, 0, 0, 0)" }}
           animate={controls}
         ></motion.div>
-        <div className="flex flex-col items-center justify-center p-4 gap-4">
+        <div className="flex flex-col items-center justify-center p-4 gap-4 z-10">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
           <p className="headerFont text-white text-4xl md:text-7xl font-black text-center">
             Your key to luxury living
@@ -148,7 +151,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="  py-10 px-4 md:py-24 bg-[#26282B] flex flex-col items-center justify-center gap-5 md:gap-10">
+      <section className="py-10 px-4 md:py-24 bg-[#26282B] flex flex-col items-center justify-center gap-5 md:gap-10">
         <div
           className="flex flex-col gap-5 items-center"
           data-aos="fade-up"
@@ -179,7 +182,7 @@ export default function Home() {
         <div
           className="md:w-1/2 bg-cover bg-no-repeat flex items-end justify-end h-[400px] md:h-auto"
           style={{
-            backgroundImage: `url(${sectionThreeData[sectionThree].bg})`,
+            backgroundImage: `url(/estate2.png)`,
           }}
         >
           <div className="hidden p-5 md:p-10">
@@ -205,7 +208,7 @@ export default function Home() {
         </div>
         <div className=" md:w-1/2 flex justify-center p-10 pr-20 flex-col gap-4">
           <div
-            className="  h-fit flex justify-center flex-col gap-4"
+            className=" text-black h-fit flex justify-center flex-col gap-4"
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-delay="50"
@@ -240,7 +243,7 @@ export default function Home() {
       <section className="flex flex-col-reverse bg-white md:flex-row min-h-screen w-full">
         <div className="md:w-1/2 flex justify-center p-10 flex-col gap-4">
           <div
-            className="flex flex-col gap-4 "
+            className="text-black flex flex-col gap-4 "
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-delay="50"
@@ -274,7 +277,7 @@ export default function Home() {
         <div
           className="md:w-1/2 bg-cover bg-no-repeat flex items-end h-[400px] md:h-auto"
           style={{
-            backgroundImage: `url(${sectionFourData[sectionFour].bg})`,
+            backgroundImage: `url(/estate3.png)`,
           }}
         >
           <div className="hidden p-10">
@@ -303,7 +306,7 @@ export default function Home() {
         <div
           className="md:w-1/2 bg-cover bg-no-repeat flex items-end justify-end h-[400px] md:h-auto"
           style={{
-            backgroundImage: `url(${sectionFiveData[sectionFive].bg})`,
+            backgroundImage: `url(/estate4.png)`,
           }}
         >
           <div className="hidden p-5 md:p-10">
@@ -327,7 +330,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className=" md:w-1/2 flex justify-center p-10 pr-20 flex-col gap-4">
+        <div className="text-black md:w-1/2 flex justify-center p-10 pr-20 flex-col gap-4">
           <div
             className="  h-fit flex justify-center flex-col gap-4"
             data-aos="fade-up"

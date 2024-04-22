@@ -361,7 +361,8 @@ const Header = ({ className }) => {
           >
             {headerMenus.find((menu) => menu.key === activeMenu)?.content}
           </Popper>
-          <div className=" ml-[5%] lg:ml-[16%] xl:ml-[33%] 2xl:ml-[40%] flex gap-1 justify-between w-full items-center">
+          <div className="  flex gap-8 justify-between w-full items-center">
+            <div className="flex flex-1"></div>
             {headerMenus?.map((headerMenu, index) => (
               <div
                 key={index}
