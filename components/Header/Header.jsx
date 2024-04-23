@@ -59,7 +59,7 @@ const Header = ({ className }) => {
       key: "about",
       label: "About",
       content: (
-        <SlideInFromTop className="hidden ml-[15%] lg:ml-[25%] xl:ml-[40%] 2xl:ml-[45%] bg-[#26282B] w-fit p-4 md:flex flex-col gap-4">
+        <SlideInFromTop className="hidden ml-[15%] lg:ml-[25%] xl:ml-[40%] 2xl:ml-[45%] bg-[#26282B] w-fit p-4 md:flex flex-col gap-4 -my-[1px]">
           {/* <MenuItem
             image={"/assets/home1.svg"}
             title={"Facts and Figures"}
@@ -88,7 +88,7 @@ const Header = ({ className }) => {
       key: "projects",
       label: "Projects",
       content: (
-        <SlideInFromTop className="hidden bg-[#26282B] w-full p-5 md:flex flex-col gap-4">
+        <SlideInFromTop className="hidden bg-[#26282B] w-full p-5 md:flex flex-col gap-4 -my-[1px]">
           <MenuTab
             width={" w-full "}
             menus={[
@@ -197,15 +197,16 @@ const Header = ({ className }) => {
       key: "resources",
       label: "Resources",
       content: (
-        <SlideInFromTop className="hidden bg-[#26282B] w-full py-10 px-14 md:grid grid-cols-4 gap-5">
-          <MenuItem
-            image={"/assets/blogPost.svg"}
-            title={"Blog Posts"}
-            subtitle={"Latest reality insights"}
-            link={"/resources/blog-posts"}
-            setOpen={setOpen}
-          />
-          {/* <MenuItem
+        <SlideInFromTop className="hidden bg-[#26282B] w-full py-10 px-14 md:flex items-center justify-center gap-5 -my-[1px]">
+          <div className="flex w-screen max-w-7xl justify-between ">
+            <MenuItem
+              image={"/assets/blogPost.svg"}
+              title={"Blog Posts"}
+              subtitle={"Latest reality insights"}
+              link={"/resources/blog-posts"}
+              setOpen={setOpen}
+            />
+            {/* <MenuItem
             image={"/assets/buying.svg"}
             title={"Buying & Selling Tips"}
             subtitle={"Transaction best practices"}
@@ -219,14 +220,14 @@ const Header = ({ className }) => {
             link={"/resources"}
             setOpen={setOpen}
           />*/}
-          <MenuItem
-            image={"/assets/agent.svg"}
-            title={"Agent Profile"}
-            subtitle={"Realtor's background and expertise"}
-            link={"/resources/agent"}
-            setOpen={setOpen}
-          />
-          {/* <MenuItem
+            <MenuItem
+              image={"/assets/agent.svg"}
+              title={"Agent Profile"}
+              subtitle={"Realtor's background and expertise"}
+              link={"/resources/agent"}
+              setOpen={setOpen}
+            />
+            {/* <MenuItem
             image={"/assets/realEstateNews.svg"}
             title={"Real Estate News"}
             subtitle={"Property sector headlines"}
@@ -282,13 +283,14 @@ const Header = ({ className }) => {
             link={"/resources"}
             setOpen={setOpen}
           /> */}
-          <MenuItem
-            image={"/assets/faq.svg"}
-            title={"FAQs"}
-            subtitle={"Frequently asked questions"}
-            link={"/FAQ"}
-            setOpen={setOpen}
-          />
+            <MenuItem
+              image={"/assets/faq.svg"}
+              title={"FAQs"}
+              subtitle={"Frequently asked questions"}
+              link={"/FAQ"}
+              setOpen={setOpen}
+            />
+          </div>
         </SlideInFromTop>
       ),
     },
@@ -326,10 +328,10 @@ const Header = ({ className }) => {
 
   return (
     <>
-      <div className="w-full fixed top-0 z-20 max-h-10 ">
+      <div className="w-full fixed top-0 z-20 max-h-10">
         <motion.div
           ref={headerRef}
-          className={`hidden w-full md:flex px-6 ${
+          className={`hidden w-full md:flex flex-col items-center px-6 ${
             paddingTop < 2 || open ? "bg-[#111]" : ""
           } ${className ? className : ""}`}
           initial={{ paddingTop: "2.5rem" }}
@@ -340,71 +342,75 @@ const Header = ({ className }) => {
             }
           }}
         >
-          <Link href={"/"} className="w-20 h-20 p-0">
-            <Image
-              alt={"logo"}
-              src={"/assets/blue-square-logo.png"}
-              className={"h-14 w-14"}
-            />
-          </Link>
+          <div className="flex w-full max-w-7xl">
+            <Link href={"/"} className="w-20 h-20 p-0">
+              <Image
+                alt={"logo"}
+                src={"/assets/blue-square-logo.png"}
+                className={"h-14 w-14"}
+              />
+            </Link>
 
-          <Popper
-            open={open}
-            anchorEl={headerRef.current}
-            className="w-full z-30 mt-10"
-            onMouseLeave={() => {
-              setMouthOut(true);
-            }}
-            onMouseEnter={() => {
-              setMouthOut(false);
-            }}
-          >
-            {headerMenus.find((menu) => menu.key === activeMenu)?.content}
-          </Popper>
-          <div className="  flex gap-8 justify-between w-full items-center">
-            <div className="flex flex-1"></div>
-            {headerMenus?.map((headerMenu, index) => (
-              <div
-                key={index}
-                className={`flex gap-1 text-xs lg:text-[15px] 2xl:text-base items-center cursor-pointer ${
-                  open ? "text-[#6D6E71]" : "text-white"
-                } `}
-                onMouseEnter={(e) => {
-                  console.log(headerMenu.key, "enter");
-                  if (headerMenu?.content) {
-                    handleMouseIn(e, headerMenu.key);
-                    setActiveHeader(true);
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  console.log(headerMenu.key, "leave");
-                  // handleMouseOut(e, headerMenu.key);
-                  setActiveHeader(false);
-                }}
-                onClick={(e) => {
-                  if (headerMenu?.content) {
-                    handleClick(e, headerMenu.key);
-                    setActiveHeader(true);
-                  } else {
-                    router.push(headerMenu.link);
-                  }
-                }}
-              >
-                <p className="font-bold text-lg">{headerMenu.label}</p>
-                {headerMenu.content ? (
-                  <KeyboardArrowDownIcon
-                    className={"text-xs lg:text-[15px] 2xl:text-base font-bold"}
-                  />
-                ) : null}
-              </div>
-            ))}
-            <Button
-              className={`hidden text-center text-xs lg:text-[15px] 2xl:text-base  p-2 ${
-                open ? "bg-white/10 text-white/90 " : "bg-white text-black/90"
-              }`}
+            <Popper
+              open={open}
+              anchorEl={headerRef.current}
+              className="w-full z-30 mt-10"
+              onMouseLeave={() => {
+                setMouthOut(true);
+              }}
+              onMouseEnter={() => {
+                setMouthOut(false);
+              }}
             >
-              <Link href={"/search"}>Search For a Property</Link>
-            </Button>
+              {headerMenus.find((menu) => menu.key === activeMenu)?.content}
+            </Popper>
+            <div className="  flex gap-8 justify-between w-full items-center">
+              <div className="flex flex-1"></div>
+              {headerMenus?.map((headerMenu, index) => (
+                <div
+                  key={index}
+                  className={`flex gap-1 text-xs lg:text-[15px] 2xl:text-base items-center cursor-pointer ${
+                    open ? "text-[#6D6E71]" : "text-white"
+                  } `}
+                  onMouseEnter={(e) => {
+                    console.log(headerMenu.key, "enter");
+                    if (headerMenu?.content) {
+                      handleMouseIn(e, headerMenu.key);
+                      setActiveHeader(true);
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    console.log(headerMenu.key, "leave");
+                    // handleMouseOut(e, headerMenu.key);
+                    setActiveHeader(false);
+                  }}
+                  onClick={(e) => {
+                    if (headerMenu?.content) {
+                      handleClick(e, headerMenu.key);
+                      setActiveHeader(true);
+                    } else {
+                      router.push(headerMenu.link);
+                    }
+                  }}
+                >
+                  <p className="font-bold text-lg">{headerMenu.label}</p>
+                  {headerMenu.content ? (
+                    <KeyboardArrowDownIcon
+                      className={
+                        "text-xs lg:text-[15px] 2xl:text-base font-bold"
+                      }
+                    />
+                  ) : null}
+                </div>
+              ))}
+              <Button
+                className={`hidden text-center text-xs lg:text-[15px] 2xl:text-base  p-2 ${
+                  open ? "bg-white/10 text-white/90 " : "bg-white text-black/90"
+                }`}
+              >
+                <Link href={"/search"}>Search For a Property</Link>
+              </Button>
+            </div>
           </div>
         </motion.div>
         <div
