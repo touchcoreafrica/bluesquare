@@ -67,6 +67,7 @@ fbq('track', 'PageView');
           pauseOnHover
           theme="colored"
         />
+        
         <Header />
         <div className="z-[-10]">{children}</div>
       </body>

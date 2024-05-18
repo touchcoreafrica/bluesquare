@@ -8,7 +8,7 @@ const ProjectListItem = ({ image, name, address, startFrom, link }) => {
     <Link href={link} className="flex flex-col">
       <Image alt={"project image"} src={image} className={"h-80"} />
       <div className={`flex flex-col bg-[#f8f8f8] p-4 gap-4`}>
-        <p className={`headerFont text-2xl`}>{name}</p>
+        <p className={`headerFont text-2xl text-black`}>{name}</p>
         <div className="flex justify-between">
           <div className="flex gap-4 items-center">
             <Image alt={"location"} src={"/assets/location2.svg"} />
