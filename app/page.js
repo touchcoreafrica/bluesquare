@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 import ProjectMap from "@/components/ProjectMap/ProjectMap";
 import Link from "next/link";
 import Airtable from "airtable";
+import HomeHeroCarousel from "@/components/Home/HomeCarousel";
+import HomePartnersSection from "@/components/Home/HomePartnersSection";
 
 const imageTable = new Airtable({
   apiKey:
@@ -82,28 +84,26 @@ export default function Home() {
   const sectionFourData = [{ bg: "/assets/FRONT2Sec4.png" }];
   const sectionFiveData = [{ bg: "/assets/FRONT2Sec5.png" }];
   return (
-    <div className={`bg-white relative`}>
-      <div
+    <div className={`max-w-[100vw] overflow-x-hidden relative`}>
+      {/* <div
         className={`absolute top-0 bg-cover min-h-screen bg-origin-content w-full bg-no-repeat`}
         style={{
           backgroundImage: `url(/estate1.png)`,
         }}
-        // style={{
-        //   backgroundImage: `url(${slider ? slider[sectionOne] : null})`,
-        // }}
-      ></div>
+      ></div> */}
+      <HomeHeroCarousel />
       <section
-        className={`relative bg-cover min-h-screen bg-origin-content w-full bg-no-repeat flex items-center justify-center`}
+        className={`absolute bg-cover top-0 min-h-screen bg-origin-content w-full bg-no-repeat flex items-center justify-center z-20`}
       >
         <motion.div
           className="banner-overlay min-h-full"
           initial={{ background: "rgba(0, 0, 0, 0)" }}
           animate={controls}
         ></motion.div>
-        <div className="flex flex-col items-center justify-center p-4 gap-4 z-10">
+        <div className="flex flex-col justify-center p-4 gap-4 z-10 w-full max-w-7xl px-2">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
-          <p className="headerFont text-white text-4xl md:text-7xl font-black text-center">
-            Your key to luxury living
+          <p className="headerFont text-white text-3xl md:text-6xl font-black text-start w-full max-w-2xl">
+            Inspired Living, Thoughtfully Designed
           </p>
 
           <Link
@@ -159,11 +159,13 @@ export default function Home() {
           data-aos-duration="500"
         >
           <p
-            className={`headerFont text-center text-white text-2xl md:text-5xl`}
+            className={`headerFont text-center text-white text-xl md:text-3xl max-w-7xl`}
           >
-            We specialize in the creation of exquisite
-            <br className="hidden md:block" /> and functional homes for our
-            discerning clientele.
+            BlueSquare Limited is a a leading property development company in
+            Nigeria, delivering distinct, stylish and functional living spaces
+            to clients.Our projects are primarily concentrated in high growth
+            areas, with flagship developments in Lekki, Ikoyi and Victoria
+            Island respectively.
           </p>
           <Link
             href={"/about-us"}
@@ -360,6 +362,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="flex bg-white flex-col md:flex-row py-20 w-full items-center justify-center">
+        <div className="w-full flex items-center justify-center">
+          <p
+            className={`headerFont text-center text-black text-xl md:text-3xl w-full items-center max-w-7xl`}
+          >
+            We are dedicated to creating exceptional urban living spaces. We
+            specialize in crafting contemporary properties that seamlessly blend
+            comfort and modern aesthetics. Our partnership with leading
+            construction companies in Nigeria ensures that our projects are
+            built with the highest standards of quality and innovation 
+          </p>
+        </div>
+      </section>
+      <HomePartnersSection />
 
       {/*       <div className="text-4xl text-white font-black flex items-center bg-[url('/assets/ParallexBg.png')] min-h-screen bg-fixed bg-center bg-no-repeat bg-cover"></div> */}
       {/*  <ProjectMap /> */}

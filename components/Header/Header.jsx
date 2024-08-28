@@ -328,7 +328,7 @@ const Header = ({ className }) => {
 
   return (
     <>
-      <div className="w-full fixed top-0 z-20 max-h-10">
+      <div className="w-full fixed top-0 z-50 max-h-10">
         <motion.div
           ref={headerRef}
           className={`hidden w-full md:flex flex-col items-center px-6 ${
