@@ -13,7 +13,11 @@ function HomePartnersSection() {
       <span className="headerFont text-xll lg:text-2xl w-full px-2 max-w-7xl">
         Our partners
       </span>
-      <div className="w-full px-2 max-w-7xl items-center flex flex-wrap gap-6 justify-between">
+      <div
+        className="w-full px-2 max-w-7xl items-center flex flex-wrap gap-6 justify-between "
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         {partners?.map((partner, index) => (
           <img
             src={partner}

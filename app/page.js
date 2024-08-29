@@ -102,11 +102,11 @@ export default function Home() {
         ></motion.div>
         <div className="flex flex-col justify-center p-4 gap-4 z-10 w-full max-w-7xl px-2">
           <p className="hidden text-[#D1A55C] font-bold">Blue Square</p>
-          <p className="headerFont text-white text-3xl md:text-6xl font-black text-start w-full max-w-2xl">
+          <div className="headerFont text-white text-3xl md:text-6xl font-black text-start w-full max-w-2xl">
             Inspired Living, Thoughtfully Designed
-          </p>
+          </div>
 
-          <Link
+          {/* <Link
             href={"/about-us"}
             className={`bodyFont text-white px-8 py-4 w-full cursor-pointer md:w-fit z-50`}
             style={{
@@ -115,7 +115,7 @@ export default function Home() {
             }}
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
         <div className=" flex md:gap-20 flex-col mb-10 md:mb-40 mr-5 md:mr-20 items-end">
           <div className="hidden  border-[20px] border-[#CAA969] h-60 w-72 bg-black/50"></div>
@@ -172,7 +172,7 @@ export default function Home() {
             className={`bodyFont text-white px-8 py-4 w-full cursor-pointer md:w-fit z-50`}
             style={{
               background:
-                "linear-gradient(78deg, #835A03 0%, #CAA969 66.54%, #835A03 100%)",
+                "linear-gradient(78deg, #2770DD 0%, #1460D1 66.54%, #074EB8 100%)",
             }}
           >
             Find out more
@@ -231,7 +231,7 @@ export default function Home() {
               className={`px-10 py-4 text-white w-fit`}
               style={{
                 background:
-                  "linear-gradient(78deg, #26282B 14.83%, #43464C 61.05%, #26282B 91.83%)",
+                  "linear-gradient(78deg, #2770DD 0%, #1460D1 66.54%, #074EB8 100%)",
                 boxShadow:
                   "0px 24px 50px 0px rgba(38, 40, 43, 0.30), 0px 10px 20px 0px rgba(38, 40, 43, 0.20)",
               }}
@@ -267,7 +267,7 @@ export default function Home() {
               className={`px-10 py-4 text-white w-fit`}
               style={{
                 background:
-                  "linear-gradient(78deg, #26282B 14.83%, #43464C 61.05%, #26282B 91.83%)",
+                  "linear-gradient(78deg, #2770DD 0%, #1460D1 66.54%, #074EB8 100%)",
                 boxShadow:
                   "0px 24px 50px 0px rgba(38, 40, 43, 0.30), 0px 10px 20px 0px rgba(38, 40, 43, 0.20)",
               }}
@@ -352,7 +352,7 @@ export default function Home() {
               className={`px-10 py-4 text-white w-fit`}
               style={{
                 background:
-                  "linear-gradient(78deg, #26282B 14.83%, #43464C 61.05%, #26282B 91.83%)",
+                  "linear-gradient(78deg, #2770DD 0%, #1460D1 66.54%, #074EB8 100%)",
                 boxShadow:
                   "0px 24px 50px 0px rgba(38, 40, 43, 0.30), 0px 10px 20px 0px rgba(38, 40, 43, 0.20)",
               }}
@@ -366,6 +366,7 @@ export default function Home() {
         <div className="w-full flex items-center justify-center">
           <p
             className={`headerFont text-center text-black text-xl md:text-3xl w-full items-center max-w-7xl`}
+            data-aos="fade-up"
           >
             We are dedicated to creating exceptional urban living spaces. We
             specialize in crafting contemporary properties that seamlessly blend

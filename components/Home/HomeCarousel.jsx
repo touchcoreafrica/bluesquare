@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-const carouselImages = ["/estate1.png", "/estate1.png"];
+const carouselImages = ["/homeHero.png"];
 
 function HomeHeroCarousel() {
   const [page, setPage] = useState(0);
