@@ -354,7 +354,7 @@ const Header = ({ className }) => {
             <Popper
               open={open}
               anchorEl={headerRef.current}
-              className="w-full z-30 mt-10"
+              className="w-full z-50 mt-10"
               onMouseLeave={() => {
                 setMouthOut(true);
               }}
