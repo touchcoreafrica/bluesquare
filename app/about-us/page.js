@@ -142,7 +142,15 @@ const Page = () => {
                 oriented destination and a fulfilling lifestyle with high yield
                 property investment that consistently exceeds expected returns.
               </p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/iq_163TmBN0?si=gPVzcbVJmIBaKGhB&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/iq_163TmBN0?si=gPVzcbVJmIBaKGhB&amp;controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <div className="flex flex-col md:flex-row flex-wrap pt-5 gap-5 justify-between">
               <div className="flex flex-col gap-5 md:w-[48%] md:mb-20">
@@ -251,7 +259,7 @@ const Page = () => {
                   "Omotoyosi Ajayi is a Branding and Communications Professional, adding long term value to the bottom line of brands through Integrated Marketing Communications, Public Relations, Brand Management, and Personal Branding. She leverages branding and communications as a tool for reinforcing value proposition, which leads to improved financial performance, higher productivity, brand recognition, and customer satisfaction. She has vast experience consulting for organizations and executives in providing marketing, brand management, public relations, and personal branding services, helping them to move from one level of growth to a higher level of growth, by developing effective marketing and communications strategies and equipping professionals with the confidence and competence needed to thrive."
                 }
               />
-              <TeamCard
+              {/* <TeamCard
                 name={"Fidel Okwuokei"}
                 position={"Architect and Finishing Manager"}
                 className={"w-full"}
@@ -259,7 +267,7 @@ const Page = () => {
                 detail={
                   "Fidel Okwuokei is a licensed architect with the architect registration council of Nigeria and a trained facility manager from the United kingdom. He has a vast knowledge of the construction industry from design to contract administration and post construction management. He has been in the business for over 20 years, with key emphasis on details and internationally acceptable standards in construction industry, complex residential projects, commercial and hospitality sector. Some of the companies he has worked with include Shell, the Nigerian stock exchange , Metro West, Templar's , Novartis, design Union amongst others. He has a master's degree in architecture from the University of jos Nigeria and a master's degree in Facility management from the Heriot Watt University in Scotland."
                 }
-              />
+              /> */}
               <TeamCard
                 name={"Gbemisola Sijuade"}
                 position={"Head of Sales"}
