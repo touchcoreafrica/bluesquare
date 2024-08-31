@@ -5,6 +5,7 @@ import Header from "@/components/Header/Header";
 import { AOSInit } from "@/utils/aos";
 import { ToastContainer } from "react-toastify";
 import Head from "next/head";
+import { WhatsApp } from "@mui/icons-material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,7 +68,7 @@ fbq('track', 'PageView');
           pauseOnHover
           theme="colored"
         />
-        
+
         <Header />
         <div className="z-[-10]">{children}</div>
       </body>

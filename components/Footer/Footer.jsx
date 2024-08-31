@@ -4,10 +4,12 @@ import TextField from "../TextField/TextField";
 import Image from "../Image/Image";
 import Link from "next/link";
 import EmailSubscriptionForm from "../EmailSubscriptionForm/EmailSubscriptionForm";
+import Whatsapp from "../Whatsapp";
 
 const Footer = () => {
   return (
     <section className=" min-h-screen flex flex-col">
+      <Whatsapp />
       <div className={"h-[400px] flex items-end"}>
         <div
           className={` h-3/4 w-full bg-cover bg-[url('/assets/footerBg.png')] `}

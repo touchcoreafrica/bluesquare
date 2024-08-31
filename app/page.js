@@ -13,6 +13,7 @@ import Link from "next/link";
 import Airtable from "airtable";
 import HomeHeroCarousel from "@/components/Home/HomeCarousel";
 import HomePartnersSection from "@/components/Home/HomePartnersSection";
+import Whatsapp from "@/components/Whatsapp";
 
 const imageTable = new Airtable({
   apiKey:
@@ -161,7 +162,7 @@ export default function Home() {
           <p
             className={`headerFont text-center text-white text-xl md:text-3xl max-w-7xl`}
           >
-            BlueSquare Limited is a a leading property development company in
+            Blue Square Limited is a a leading property development company in
             Nigeria, delivering distinct, stylish and functional living spaces
             to clients.Our projects are primarily concentrated in high growth
             areas, with flagship developments in Lekki, Ikoyi and Victoria
