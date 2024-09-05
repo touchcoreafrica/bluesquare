@@ -43,12 +43,18 @@ const Footer = () => {
                   {/* <Link href={""}>Projects</Link> */}
                   <Link
                     target="_blank"
+                    href={"https://forms.gle/zoM8ccE1jcys31Q49"}
+                  >
+                    Book a tour
+                  </Link>
+                  {/* <Link
+                    target="_blank"
                     href={
                       "https://calendly.com/infobluesquareng/gazania-park?month=2024-02"
                     }
                   >
                     Virtual Tour
-                  </Link>
+                  </Link> */}
                   <Link href={"resources"}>Resources</Link>
                   <Link href={"FAQ"}>FAQs</Link>
                   <Link href={"contact-us"}>Contact Us</Link>

@@ -109,6 +109,23 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            // className="hidden"
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSfXo-jj4z8rznqHyPoklATpu22m9-AYo8NaX5_vC1fwbSeP6A/viewform"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              // onClick={() => {
+              //   setShowTour(true);
+              // }}
+              className={`font-bold bodyFont w-full bg-[#0A52BF] p-4 text-white`}
+            >
+              Register interest
+            </Button>
+          </Link>
+          <Link
             target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=1SOSWgqgfvVfs-mrObv9KZ4CkQ0aLEBKv"
@@ -210,10 +227,10 @@ export default function Page() {
             <p className={`bodyFont text-[#6D6E71] leading-[190%]`}>
               Gazania Park depicts an outstanding opportunity to live amongst
               the character, heritage and culture that Periwinkle has to offer.
-              This impressive development is home to a unique collection of 1,
-              2, 3 bed apartments, 3 and 4 luxury bedroom maisonette, designed
-              with the sophisticated and discerning in mind, upholding the
-              tenets of class, style, quality and innovation.
+              This impressive development is home to a unique collection of
+              Luxury 1, 2, and 3 bedrooms apartments with staff quarters,
+              designed with the sophisticated and discerning in mind, upholding
+              the tenets of class, style, quality and innovation.
             </p>
             <p className={`bodyFont text-[#6D6E71] leading-[190%]`}>
               Bringing together modern architecture and interior design, Gazania

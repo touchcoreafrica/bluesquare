@@ -7,7 +7,7 @@ const TeamCard = ({ className, name, position, pic, detail }) => {
   return (
     <div className={`${className} flex flex-col gap-3 bg-white p-4`}>
       <div className="flex justify-between w-full items-center">
-        <p className={`text-2xl md:text-4xl headerFont`}>
+        <p className={`text-2xl md:text-4xl headerFont text-black`}>
           {name || "Name Here"}
         </p>
         <button
@@ -26,10 +26,23 @@ const TeamCard = ({ className, name, position, pic, detail }) => {
       {view ? (
         <div className="flex gap-4 flex-col md:flex-row">
           {pic !== null ? (
-            <Image className={"md:w-1/4"} alt={"team pic"} src={pic} />
+            <Image
+              className={"md:w-1/4 max-h-[200px] object-cover"}
+              alt={"team pic"}
+              src={pic}
+            />
           ) : null}
           {detail !== null ? (
-            <p className={`bodyFont text-black/60 text-lg`}>{detail}</p>
+            <div className="flex flex-col">
+              {detail?.map((description, index) => (
+                <p
+                  key={index}
+                  className={`bodyFont text-black/60 text-lg mb-4`}
+                >
+                  {description}
+                </p>
+              ))}
+            </div>
           ) : null}
         </div>
       ) : null}

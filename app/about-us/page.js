@@ -9,6 +9,86 @@ import Footer from "@/components/Footer/Footer";
 import { SlideFromRtoL } from "@/components/Animation";
 import { useAnimation, motion } from "framer-motion";
 
+const team = [
+  {
+    name: "Mr. Adekunle Sonola",
+    position: "Director",
+    picture: "/adekunle.png",
+    descriptions: [
+      "Mr. Sonola is a distinguished boardroom stalwart with over 33 years of extensive experience across Africa's financial services sector. He holds a bachelor's degree in English Language from Ogun State University, an LL.B in Law from Obafemi Awolowo University, and an MBA from Durham University Business School in the United Kingdom. His career highlights include serving as Chief Executive Officer at Polaris Bank and as Executive Director of Commercial Banking at Union Bank Plc from 2015 to March 2021. His international experience is notable, having been the pioneer Regional Managing Director of Guaranty Trust Bank East Africa, where he successfully established the franchise in Uganda, Rwanda, and Kenya. He advanced from a member of the Corporate Finance Group to Divisional Head of Corporate Banking and also held the position of Director of Investment Banking Africa for Standard Bank of South Africa. Mr. Adekunle has served on the boards of Airtel Africa Plc and First Bank of Nigeria, where he chaired the Board’s Risk Management Committee.",
+    ],
+  },
+  {
+    name: "Mr. Babasola Aluko",
+    position: "Director",
+    picture: "/babasola.png",
+    descriptions: [
+      "Babasola Aluko is a seasoned professional with over 20 years banking experience. He started his banking career in Chartered bank as a relationship officer in one of the branches. His experience in banking was largely in customer facing units and relationship management. He was the Head of Financial Institutions and International Organizations from Ecobank Nigeria. He held the position for 5years before resigning in 2019. While at Ecobank Nigeria, he broadened the Bank’s relationship with offshore banks and coordinated the Bank’s debut loan syndication where the Bank raised over $150 million from foreign banks. He is involved in several entrepreneurial activities after disengaging from banking. He currently has interests in Mining, Agriculture, real estate both in Nigeria and abroad. He is currently a Director in Blue Square Limited a real estate development company and on the board of other companies. Babasola has a B.Eng (Hons) in Civil Engineering from University of Ilorin and MBA (Marketing) from the Obafemi Awolowo University.",
+    ],
+  },
+  {
+    name: "Omotoyosi Ajayi",
+    position: "Head of Marketing and Communications",
+    picture: "/omotoyosi.png",
+    descriptions: [
+      "Omotoyosi Ajayi is a Branding and Communications Professional, adding long term value to the bottom line of brands through Integrated Marketing Communications, Public Relations, Brand Management, and Personal Branding. She leverages branding and communications as a tool for reinforcing value proposition, which leads to improved financial performance, higher productivity, brand recognition, and customer satisfaction. She has vast experience consulting for organizations and executives in providing marketing, brand management, public relations, and personal branding services, helping them to move from one level of growth to a higher level of growth, by developing effective marketing and communications strategies and equipping professionals with the confidence and competence needed to thrive.",
+    ],
+  },
+  {
+    name: "Mr. Gbemisola Sijuade",
+    position: "Head of Sales",
+    picture: "/gbemisola.png",
+    descriptions: [
+      "Gbemisola is a seasoned Sales professional with over 20 years of experience. She is highly motivated with extensive customer service and sales experienc. She has a track record of driving increased sales, improving buying experience and elevating the company profile with target market. A team player extraordinaire, resourceful, hardworking and result-oriented.",
+    ],
+  },
+  {
+    name: "Hammed Otunla",
+    position: "Construction Manager/Structural Engineer",
+    picture: "/hammed.png",
+    descriptions: [
+      "Engr. Hammed A. Otunla {MNSE, MNICE, R. Engr. COREN} is a trained and licensed Civil Engineer with over 15 years’ experience structural design, construction management and project management. He has managed different projects ranging from residential/commercial to institutional developments. He is a graduate of Civil Engineering from Federal Polytechnic Ilaro Ogun State and Federal university of Technology Akure Ondo State respectively.",
+    ],
+  },
+  {
+    name: "Oiza Effanga",
+    position: "Project manager",
+    picture: "/oiza.png",
+    descriptions: [
+      "A registered Architect and Project Manager with a cumulative of 10 years’ experience in the construction industry. She has been involved in and successfully anchored and executed several projects ranging from design to construction of multiple type residential developments, commercial and institutional projects. Her major strengths are in strategy and leadership capacity which enable her lead separate teams with different briefs as well as achieving fundamental improvements in the organization’s productivity and profitability",
+    ],
+  },
+  {
+    name: "Abiola Olanrewaju",
+    position: "Finance manager",
+    picture: "/abiola.png",
+    descriptions: [
+      "Olanrewaju Abiola is a Chartered Accountant with extensive experience spanning multiple industries. She earned a Bachelor of Science degree from Obafemi Awolowo University, Ile-Ife and a Master of Business Administration with a specialization in Finance from the University of Lagos.",
+      "Throughout her career, she has demonstrated exceptional expertise in financial management, accounting, and taxation. Her professional journey is marked by significant contributions to various organizations, where she has applied her skills to enhance financial performance, ensure regulatory compliance, and drive strategic initiatives.",
+      "As an Associate Member of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN), she remains committed to maintaining the highest standards of professional integrity and continuous learning. Her knowledge and practical experience make her a valuable asset to any organization seeking financial excellence and sustainable growth.",
+    ],
+  },
+  {
+    name: "Fidel Okwuokei",
+    position: "Architect and Finishing Manager",
+    picture: "/fidel.png",
+    descriptions: [
+      "Fidel Okwuokei is a licenced arechitect . He obtained a B.Sc degree (Second Class Upper Division) in architecture and a masters degree both from the university of Jos, an MBA in Business Administration and also a Master Degree in Facilities management he obtained from Heriot Watt University in the united kingdom. He served with Design Union Consulting LLC, one of the leading consulting firms in Nigeria and West Africa for seven years, during his service at Design Union he rose from the position of Project Architect top general manager in charge of contract administration. He has vast experience in the construction industry spanning from the famous Grand Hotel in Asaba which he was the pioneer contractor/ consultant that built the hotel with Rofega Consultants (a construction company based in Jos). Fidel actively participated in the remodeling of the burnt terminus market in Jos in 2001. He served his Fatherland in Nasasrawa state ministry of works and was the team lead that help remodel the burnt orientation camp in Keffi, this earned him a state award from the National Youth Service Corp.",
+    ],
+  },
+  {
+    name: "Elizabeth Ekpien",
+    position: "HUMAN RESOURCE AND ADMIN MANAGER",
+    picture: "/elizabeth.png",
+    descriptions: [
+      "She is a seasoned legal professional with a distinguished career spanning over a decade. Holding a Bachelor of Law (LL.B) from the University of Ibadan and a Barrister at Law (B.L) from the Nigerian Law School, Lagos, Elizabeth has a strong foundation in legal principles and procedures.",
+      "Beyond her legal expertise, Elizabeth has cultivated a deep understanding of the financial, real estate, and oil and gas industries. Her career journey has been enriched by advanced training in Strategic Human Resource Leadership, Total Reward, Compensation & Benefits, and Payroll Management.",
+      "Currently, she is the Head of Human Resources and Administration at Blue Square . In this pivotal role, she oversees HR and administrative functions, leveraging their extensive knowledge in employee and labor relations, HR management, training, and development. The strategic insight and commitment to excellence has been instrumental in driving organizational success.",
+      "Elizabeth is a dedicated professional who adheres to the highest ethical standards. With a diverse background and a continuous pursuit of learning, She is a valuable asset in aligning corporate goals with employee engagement and business growth.",
+    ],
+  },
+];
+
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const controls = useAnimation();
@@ -230,71 +310,20 @@ const Page = () => {
         >
           <div className="hidden w-2/12 md:flex flex-col gap-4"></div>
           <div className="md:w-10/12 flex flex-col gap-5">
-            <h1 className={`headerFont text-3xl md:text-5xl`}>Meet the Team</h1>
+            <h1 className={`headerFont text-3xl md:text-5xl text-black`}>
+              Meet the Team
+            </h1>
             <div className="flex flex-col gap-4">
-              <TeamCard
-                name={"Babasola Aluko"}
-                position={"Managing Director"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "Babasola Aluko is a seasoned professional with over 20 years banking experience. He started his banking career in Standard Chartered bank as a relationship officer in one of the branches. His experience in banking was largely in customer facing units and relationship management. He was the Head of Financial Institutions and International Organizations at Ecobank Nigeria. He held the position for 5 years before resigning in 2019. While at Ecobank Nigeria, he broadened the Bank’s relationship with offshore banks and coordinated the Bank’s debut loan syndication where the Bank raised over $150 million from foreign banks. He has been involved in several entrepreneurial activities after disengaging from banking. He currently has interests in Mining, Agriculture, real estate both in Nigeria and abroad. He is currently a director at Blue Square Limited, a real estate development company and on the board of other companies. Babasola has a B.Eng (Hons) in Civil Engineering from University of Ilorin and MBA (Marketing) from the Obafemi Awolowo University."
-                }
-              />
-              <TeamCard
-                name={"Morayo Oyeleke"}
-                position={"Executive Director"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "Mrs. Oyeleke, has 25+ years of diverse management level experience cutting across various functions and customer value chains in the Banking and Finance Industry including audit, internal control, commercial and retail banking – and Management Consulting. An experienced HR Leader with an excellent appreciation of C-suite pain points and with areas of expertise in Human Capital Strategy Development and Implementation and Talent Management, Morayo led the HR function of Guaranty Trust Bank for eight years bringing to bear her deep multi-sector expertise, leading largescale talent management. In addition, she has also worked In Union Bank leading the Leadership and Culture transformation initiatives across various divisions. Prior to serving at GTB, Mrs. Morayo Oyeleke worked at an audit firm, Adetona Isichei and Co. serving as an internal control and audit consultant. She currently leads a management consultancy firm where she is responsible for delivering talent transformation solutions for her clients cutting across multiple industries and sectors. Mrs. Morayo Oyeleke is an alumnus of executive education programmes at Insead, IMD, Cranfield and Harvard and holds a Bachelor of Science in Statistics from the University of Ibadan, Nigeria. She is an associate member of the Association of Chartered Accountants and an affiliate member of the Chartered Institute of Personnel Development, UK."
-                }
-              />
-              <TeamCard
-                name={"Omotoyosi Ajayi"}
-                position={"Head of Marketing and Communications"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "Omotoyosi Ajayi is a Branding and Communications Professional, adding long term value to the bottom line of brands through Integrated Marketing Communications, Public Relations, Brand Management, and Personal Branding. She leverages branding and communications as a tool for reinforcing value proposition, which leads to improved financial performance, higher productivity, brand recognition, and customer satisfaction. She has vast experience consulting for organizations and executives in providing marketing, brand management, public relations, and personal branding services, helping them to move from one level of growth to a higher level of growth, by developing effective marketing and communications strategies and equipping professionals with the confidence and competence needed to thrive."
-                }
-              />
-              {/* <TeamCard
-                name={"Fidel Okwuokei"}
-                position={"Architect and Finishing Manager"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "Fidel Okwuokei is a licensed architect with the architect registration council of Nigeria and a trained facility manager from the United kingdom. He has a vast knowledge of the construction industry from design to contract administration and post construction management. He has been in the business for over 20 years, with key emphasis on details and internationally acceptable standards in construction industry, complex residential projects, commercial and hospitality sector. Some of the companies he has worked with include Shell, the Nigerian stock exchange , Metro West, Templar's , Novartis, design Union amongst others. He has a master's degree in architecture from the University of jos Nigeria and a master's degree in Facility management from the Heriot Watt University in Scotland."
-                }
-              /> */}
-              <TeamCard
-                name={"Gbemisola Sijuade"}
-                position={"Head of Sales"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "Gbemisola is a seasoned Sales professional with over 20 years of experience. She is highly motivated with extensive customer service and sales experience. She has a track record of driving increased sales, improving buying experience and elevating the company profile with target market. A team player extraordinaire, resourceful, hardworking and result-oriented."
-                }
-              />
-              <TeamCard
-                name={"Hammed Otunla"}
-                position={" Construction Manager/Structural Engineer"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "Engr. Hammed A. Otunla {MNSE, MNICE, R. Engr. COREN} is a trained and licensed Civil Engineer with over 15 years’ experience structural design, construction management and project management. He has managed different projects ranging from residential/commercial to institutional developments. He is a graduate of Civil Engineering from Federal Polytechnic Ilaro Ogun State and Federal university of Technology Akure Ondo State respectively. "
-                }
-              />
-              <TeamCard
-                name={"Oiza Effanga"}
-                position={"Project Manager"}
-                className={"w-full"}
-                pic={"/assets/blank.png"}
-                detail={
-                  "A registered Architect and Project Manager with a cumulative of 10 years’ experience in the construction industry. She has been involved in and successfully anchored and executed several projects ranging from design to construction of multiple type residential developments, commercial and institutional projects. Her major strengths are in strategy and leadership capacity which enable her lead separate teams with different briefs as well as achieving fundamental improvements in the organization’s productivity and profitability "
-                }
-              />
+              {team?.map((person, index) => (
+                <TeamCard
+                  key={index}
+                  name={person?.name}
+                  position={person?.position}
+                  className={"w-full"}
+                  pic={person?.picture}
+                  detail={person?.descriptions}
+                />
+              ))}
             </div>
           </div>
         </section>

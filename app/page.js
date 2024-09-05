@@ -255,12 +255,8 @@ export default function Home() {
             <h1 className={`headerFont text-4xl`}>Gazania Park</h1>
             <p className={`bodyFont leading-[190%]`}>
               This impressive development is home to a unique collection of 1,
-              2,
-              <br />
-              3 bed apartments, 3 and 4 luxury bedroom maisonette, designed with
-              <br />
-              the sophisticated and discerning in mind, upholding the tenets of
-              <br />
+              2, 3 bed apartments with staff quarters, designed with the
+              sophisticated and discerning in mind, upholding the tenets of
               class, style, quality and innovation.
             </p>
             <Link

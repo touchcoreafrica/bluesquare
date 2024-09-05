@@ -138,7 +138,7 @@ const Page = () => {
               "How can I contact Blue Square for further inquiries or assistance?"
             }
             answer={
-              "Contact us via phone at 09169448069 and 08177771590, email at info@bluesquareng.com, or visit our office. Our team is ready to assist you on your real estate journey.\n Feel free to reach out to us if you have any other questions or if you require additional information. We're here to make your experience with Blue Square exceptional."
+              "Contact us via phone at 09169448069, email at info@bluesquareng.com, or visit our office. Our team is ready to assist you on your real estate journey.\n Feel free to reach out to us if you have any other questions or if you require additional information. We're here to make your experience with Blue Square exceptional."
             }
           />
         </section>

@@ -10,7 +10,9 @@ const FAQCard = ({ question, answer }) => {
   return (
     <div className="flex flex-col w-full gap-4 bg-[#f8f8f8] p-4">
       <div className="flex justify-between w-full items-center">
-        <p className={`headerFont text-xl font-black `}>{question}</p>
+        <p className={`headerFont text-xl font-black text-black `}>
+          {question}
+        </p>
         <Button
           onClick={() => {
             setShow(!show);
