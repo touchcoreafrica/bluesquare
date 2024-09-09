@@ -27,6 +27,14 @@ const team = [
     ],
   },
   {
+    name: "Mrs. Morayo Oyeleke",
+    position: "Director",
+    picture: "/morayo.jpg",
+    descriptions: [
+      "Mrs. Oyeleke, has 25+ years of diverse management level experience cutting across various functions and customer value chains in the Banking and Finance Industry – including audit, internal control, commercial and retail banking – and Management Consulting. An experienced HR Leader with an excellent appreciation of C-suite pain points and with areas of expertise in Human Capital Strategy Development and Implementation and Talent Management, Morayo led the HR function of Guaranty Trust Bank for eight years bringing to bear her deep multi-sector expertise, leading largescale talent management. In addition, she has also worked In Union Bank leading the Leadership and Culture transformation initiatives across various divisions. Prior to serving at GTB, Mrs. Morayo Oyeleke worked at an audit firm, Adetona Isichei and Co. serving as an internal control and audit consultant. She currently leads a management consultancy firm where she is responsible for delivering talent transformation solutions for her clients cutting across multiple industries and sectors. Mrs. Morayo Oyeleke is an alumnus of executive education programmes at Insead, IMD, Cranfield and Harvard and holds a Bachelor of Science in Statistics from the University of Ibadan, Nigeria. She is an associate member of the Association of Chartered Accountants and an affiliate member of the Chartered Institute of Personnel Development, UK.",
+    ],
+  },
+  {
     name: "Omotoyosi Ajayi",
     position: "Head of Marketing and Communications",
     picture: "/omotoyosi.png",
@@ -45,7 +53,7 @@ const team = [
   {
     name: "Hammed Otunla",
     position: "Construction Manager/Structural Engineer",
-    picture: "/hammed.png",
+    picture: "/hammed.jpg",
     descriptions: [
       "Engr. Hammed A. Otunla {MNSE, MNICE, R. Engr. COREN} is a trained and licensed Civil Engineer with over 15 years’ experience structural design, construction management and project management. He has managed different projects ranging from residential/commercial to institutional developments. He is a graduate of Civil Engineering from Federal Polytechnic Ilaro Ogun State and Federal university of Technology Akure Ondo State respectively.",
     ],
@@ -68,14 +76,14 @@ const team = [
       "As an Associate Member of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN), she remains committed to maintaining the highest standards of professional integrity and continuous learning. Her knowledge and practical experience make her a valuable asset to any organization seeking financial excellence and sustainable growth.",
     ],
   },
-  {
-    name: "Fidel Okwuokei",
-    position: "Architect and Finishing Manager",
-    picture: "/fidel.png",
-    descriptions: [
-      "Fidel Okwuokei is a licenced arechitect . He obtained a B.Sc degree (Second Class Upper Division) in architecture and a masters degree both from the university of Jos, an MBA in Business Administration and also a Master Degree in Facilities management he obtained from Heriot Watt University in the united kingdom. He served with Design Union Consulting LLC, one of the leading consulting firms in Nigeria and West Africa for seven years, during his service at Design Union he rose from the position of Project Architect top general manager in charge of contract administration. He has vast experience in the construction industry spanning from the famous Grand Hotel in Asaba which he was the pioneer contractor/ consultant that built the hotel with Rofega Consultants (a construction company based in Jos). Fidel actively participated in the remodeling of the burnt terminus market in Jos in 2001. He served his Fatherland in Nasasrawa state ministry of works and was the team lead that help remodel the burnt orientation camp in Keffi, this earned him a state award from the National Youth Service Corp.",
-    ],
-  },
+  // {
+  //   name: "Fidel Okwuokei",
+  //   position: "Architect and Finishing Manager",
+  //   picture: "/fidel.png",
+  //   descriptions: [
+  //     "Fidel Okwuokei is a licenced arechitect . He obtained a B.Sc degree (Second Class Upper Division) in architecture and a masters degree both from the university of Jos, an MBA in Business Administration and also a Master Degree in Facilities management he obtained from Heriot Watt University in the united kingdom. He served with Design Union Consulting LLC, one of the leading consulting firms in Nigeria and West Africa for seven years, during his service at Design Union he rose from the position of Project Architect top general manager in charge of contract administration. He has vast experience in the construction industry spanning from the famous Grand Hotel in Asaba which he was the pioneer contractor/ consultant that built the hotel with Rofega Consultants (a construction company based in Jos). Fidel actively participated in the remodeling of the burnt terminus market in Jos in 2001. He served his Fatherland in Nasasrawa state ministry of works and was the team lead that help remodel the burnt orientation camp in Keffi, this earned him a state award from the National Youth Service Corp.",
+  //   ],
+  // },
   {
     name: "Elizabeth Ekpien",
     position: "HUMAN RESOURCE AND ADMIN MANAGER",

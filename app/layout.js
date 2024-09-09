@@ -6,6 +6,7 @@ import { AOSInit } from "@/utils/aos";
 import { ToastContainer } from "react-toastify";
 import Head from "next/head";
 import { WhatsApp } from "@mui/icons-material";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,14 +23,14 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-R7RXFDNY7Q"
         />
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: ` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-R7RXFDNY7Q',{page_path:window.location.pathname});`,
           }}
-        />
+        /> */}
         <script
           dangerouslySetInnerHTML={{
             __html: `!function(f,b,e,v,n,t,s)
@@ -68,10 +69,21 @@ fbq('track', 'PageView');
           pauseOnHover
           theme="colored"
         />
-
         <Header />
         <div className="z-[-10]">{children}</div>
       </body>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || []; 
+                function gtag(){dataLayer.push(arguments)} 
+                gtag('js', new Date()); 
+                gtag('config', 'G-R7RXFDNY7Q');
+              `,
+        }}
+      />
     </html>
   );
 }

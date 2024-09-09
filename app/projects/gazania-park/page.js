@@ -97,7 +97,9 @@ export default function Page() {
         <div className="shadow-2xl hidden sticky top-10 p-4 md:flex flex-col gap-2 bg-white my-[-100px]  w-[27vw]">
           <Link
             className="hidden"
-            href={"https://calendly.com/infobluesquareng/gazania-park"}
+            href={"https://forms.gle/zoM8ccE1jcys31Q49"}
+            target="_blank"
+            rel="noreferrer"
           >
             <Button
               onClick={() => {
@@ -573,7 +575,11 @@ export default function Page() {
           <p className={`headerFont text-2xl text-[#CAA969]`}>Gazania Park</p>
         </div>
         <div className={`hidden flex-col gap-2`}>
-          <Link href={"https://calendly.com/infobluesquareng/gazania-park"}>
+          <Link
+            href={"https://forms.gle/zoM8ccE1jcys31Q49"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               onClick={() => {
                 setShowTour(true);
@@ -856,7 +862,7 @@ export default function Page() {
 
           <span className="w-full h-[1px] bg-[#D1A55C]"></span>
           <Link
-            href={"https://calendly.com/infobluesquareng/gazania-park"}
+            href={"https://forms.gle/zoM8ccE1jcys31Q49"}
             className={"bg-[#111] text-white p-4 text-center"}
           >
             Book a physical tour

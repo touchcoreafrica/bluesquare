@@ -91,7 +91,11 @@ export default function Page() {
       <section className=" flex sticky top-40 pr-20 md:mb-[-300px] w-fit self-end">
         {/* <div className="w-[70%]"></div> */}
         <div className="shadow-2xl hidden sticky top-10 p-4 md:flex flex-col gap-2 bg-white my-[-100px]  w-[27vw]">
-          <Link href={"https://calendly.com/infobluesquareng/gazania-park"}>
+          <Link
+            href={"https://forms.gle/zoM8ccE1jcys31Q49"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               className={`font-bold bodyFont w-full bg-[#26282B] p-4 text-white`}
             >
@@ -567,7 +571,11 @@ export default function Page() {
           </p>
         </div>
         <div className={`flex gap-2`}>
-          <Link href={"https://calendly.com/infobluesquareng/gazania-park"}>
+          <Link
+            href={"https://forms.gle/zoM8ccE1jcys31Q49"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               className={`font-bold bodyFont w-full bg-[#26282B] p-4 text-white text-sm md:text-base`}
             >
