@@ -487,6 +487,7 @@ export default function Page() {
           >
             Book a tour
           </Button>
+
           <Button
             className={`font-bold bodyFont w-full border-[2px] border-[#26282B] md:p-4 text-black/90 text-sm`}
           >

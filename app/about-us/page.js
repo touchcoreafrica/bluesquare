@@ -85,7 +85,7 @@ const team = [
   //   ],
   // },
   {
-    name: "Elizabeth Ekpien",
+    name: "Elizabeth,  Ekpiken-okeke",
     position: "HUMAN RESOURCE AND ADMIN MANAGER",
     picture: "/elizabeth.png",
     descriptions: [

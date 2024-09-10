@@ -574,8 +574,8 @@ export default function Page() {
 
           <p className={`headerFont text-2xl text-[#CAA969]`}>Gazania Park</p>
         </div>
-        <div className={`hidden flex-col gap-2`}>
-          <Link
+        <div className={`flex lg:hidden flex-col gap-2`}>
+          {/* <Link
             href={"https://forms.gle/zoM8ccE1jcys31Q49"}
             target="_blank"
             rel="noreferrer"
@@ -588,8 +588,25 @@ export default function Page() {
             >
               Book a tour
             </Button>
-          </Link>
+          </Link> */}
           <Link
+            // className="hidden"
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSfXo-jj4z8rznqHyPoklATpu22m9-AYo8NaX5_vC1fwbSeP6A/viewform"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              // onClick={() => {
+              //   setShowTour(true);
+              // }}
+              className={`font-bold bodyFont w-full bg-[#0A52BF] p-4 text-white`}
+            >
+              Register interest
+            </Button>
+          </Link>
+          {/* <Link
             target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=1SOSWgqgfvVfs-mrObv9KZ4CkQ0aLEBKv"
@@ -597,7 +614,7 @@ export default function Page() {
             className={`font-bold p-4 text-center bodyFont w-full border-[2px] border-[#26282B] md:p-4 text-black/90 text-sm`}
           >
             Download brochure
-          </Link>
+          </Link> */}
         </div>
         <div className={`md:flex flex-col ${!card ? "hidden" : ""}`}>
           <div className={`hidden gap-2 p-2`}>

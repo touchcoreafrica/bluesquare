@@ -175,14 +175,14 @@ const Header = ({ className }) => {
                   {
                     title: "Bankole Oki Ikoyi",
                     subTitle: "Location for project",
-                    image: "/assets/blank.png",
+                    image: "/locationIcon.svg",
                     link: "",
                     type: "link",
                   },
                   {
                     title: "Lekki Phase 1",
                     subTitle: "Location for project",
-                    image: "/assets/blank.png",
+                    image: "/locationIcon.svg",
                     link: "",
                     type: "link",
                   },

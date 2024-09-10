@@ -533,6 +533,23 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            // className="hidden"
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSfXo-jj4z8rznqHyPoklATpu22m9-AYo8NaX5_vC1fwbSeP6A/viewform"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              // onClick={() => {
+              //   setShowTour(true);
+              // }}
+              className={`font-bold bodyFont w-full bg-[#0A52BF] p-4 text-white`}
+            >
+              Register interest
+            </Button>
+          </Link>
+          <Link
             target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=175K_a7v-H9NHe59R_biG2NU5kCLYeigc"

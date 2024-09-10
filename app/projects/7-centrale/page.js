@@ -21,6 +21,7 @@ export default function Page() {
   const [showTour, setShowTour] = useState(false);
   const [showThesis, setShowThesis] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [showPlan, setShowPlan] = useState(false);
   const controls = useAnimation();
   const siteImages = [
     "/assets/7-centrale-site1.png",
@@ -190,6 +191,28 @@ export default function Page() {
               <p className={`text-sm`}>Fully Sold Out</p>
             </div>
           </div> */}
+          <div className={`flex gap-2 p-2 text-black`}>
+            <div className="p-2 flex items-center justify-center bg-[#D1A55C1A]">
+              <Image
+                alt={""}
+                src={"/assets/payment-schedule.svg"}
+                className={"h-8 w-8"}
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className={`font-bold bodyFont`}>Payment Schedule</p>
+              <p className={`text-sm`}>
+                Now selling{" "}
+                <Button
+                  onClick={() => {
+                    setShowPlan(true);
+                  }}
+                >
+                  <u className="text-blue-500">view payment schedule</u>
+                </Button>
+              </p>
+            </div>
+          </div>
           <div className={`flex gap-2 p-2`}>
             <div className="p-2 flex items-center justify-center bg-[#D1A55C1A]">
               <Image
@@ -210,10 +233,10 @@ export default function Page() {
               </button>
             </div>
           </div>
-          <div className="flex gap-2 self-center items-end">
+          {/* <div className="flex gap-2 self-center items-end">
             <Image src={"/assets/sold-out.svg"} alt={"sold out"} />
             <p className="text-red-500 font-black">Sold Out</p>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="flex items-center md:px-20 p-4 overflow-visible py-5 gap-4">
@@ -602,6 +625,23 @@ export default function Page() {
             </Button>
           </Link>
           <Link
+            // className="hidden"
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSfXo-jj4z8rznqHyPoklATpu22m9-AYo8NaX5_vC1fwbSeP6A/viewform"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              // onClick={() => {
+              //   setShowTour(true);
+              // }}
+              className={`font-bold bodyFont w-full bg-[#0A52BF] p-4 text-white`}
+            >
+              Register interest
+            </Button>
+          </Link>
+          <Link
             target="_blank"
             href={
               "https://drive.google.com/uc?export=download&id=1im8E_h9cZTMFWTtKNqJVi_f9z6C21xha"
@@ -671,12 +711,12 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           className={`${card ? "" : "hidden"} flex gap-2 self-center items-end`}
         >
           <Image src={"/assets/sold-out.svg"} alt={"sold out"} />
           <p className="text-red-500 font-black">Sold Out</p>
-        </div>
+        </div> */}
       </div>
       <Footer />
       <Modal
@@ -800,6 +840,14 @@ export default function Page() {
           </div>
           <span className="h-[2px] bg-[#D1A55C] w-full"></span>
         </div>
+      </Modal>
+      <Modal
+        isVisible={showPlan}
+        onClose={() => {
+          setShowPlan(!showPlan);
+        }}
+      >
+        <Image alt={"plan"} src={"/assets/7_CENTRALE_PAYMENT_PLAN.jpg"} />
       </Modal>
     </div>
   );
