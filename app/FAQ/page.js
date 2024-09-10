@@ -56,7 +56,7 @@ const Page = () => {
               "How do I start the home-buying process with Blue Square?"
             }
             answer={
-              "We make it easy to begin your journey. Simply explore our available properties, attend a property tour, or get in touch with us on 09169448069 and 08177771590 to discuss your preferences."
+              "We make it easy to begin your journey. Simply explore our available properties, attend a property tour, or get in touch with us on 09169448069 to discuss your preferences."
             }
           />
           <FAQCard

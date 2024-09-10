@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 const Whatsapp = () => {
   return (
     <FloatingWhatsApp
-      phoneNumber="2349161225266"
+      phoneNumber="2348177771590"
       accountName="Blue square"
       avatar="/assets/blue-square-logo.png"
       className="text-black"
