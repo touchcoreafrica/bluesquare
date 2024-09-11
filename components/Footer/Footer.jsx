@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
               <div className={`flex flex-col bodyFont text-white/60 gap-1`}>
                 {/* <p>08177771590</p> */}
-                <p>+234 916 122 5266</p>
+                <p>09169448069</p>
                 <p className={`border-y-[1px] pt-5 w-fit`}>
                   info@bluesquareng.com
                 </p>
