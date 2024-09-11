@@ -31,7 +31,7 @@ const page = () => {
           <div className="flex flex-col gap-3">
             <div className="flex gap-3 items-center">
               <Image alt={"call"} src={"/assets/callLight.svg"} />
-              <p className="text-white">09161225266</p>
+              <p className="text-white">09169448069</p>
             </div>
             <div className="flex gap-3 items-center">
               <Image alt={"email"} src={"/assets/emailLight.svg"} />
