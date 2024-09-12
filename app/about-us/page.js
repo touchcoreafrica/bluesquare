@@ -153,7 +153,7 @@ const Page = () => {
             Who are we?
           </button>
 
-          <p className={`text-black/60`}>Meet the team</p>
+          {/* <p className={`text-black/60`}>Meet the team</p> */}
         </div>
         <section
           className="hidden p-4 md:p-20 w-full gap-10 bg-[#F8F8F8]"
