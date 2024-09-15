@@ -317,7 +317,7 @@ const Page = () => {
           id="meet-the-team"
         >
           <div className="hidden w-2/12 md:flex flex-col gap-4"></div>
-          <div className="md:w-10/12 flex flex-col gap-5">
+          {/* <div className="md:w-10/12 flex flex-col gap-5">
             <h1 className={`headerFont text-3xl md:text-5xl text-black`}>
               Meet the Team
             </h1>
@@ -333,7 +333,7 @@ const Page = () => {
                 />
               ))}
             </div>
-          </div>
+          </div> */}
         </section>
       </SlideFromRtoL>
       <Footer />

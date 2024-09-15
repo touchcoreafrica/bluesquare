@@ -74,13 +74,13 @@ const Header = ({ className }) => {
             link={"/about-us#who-are-we"}
             setOpen={setOpen}
           />
-          <MenuItem
+          {/* <MenuItem
             image={"/assets/about-us.svg"}
             title={"Meet the Team"}
             subtitle={"The people behind every idea"}
             link={"/about-us#meet-the-team"}
             setOpen={setOpen}
-          />
+          /> */}
         </SlideInFromTop>
       ),
     },
@@ -498,13 +498,13 @@ const Header = ({ className }) => {
                     link={"/about-us#who-are-we"}
                     setOpen={setIsMobileMenuOpen}
                   />
-                  <MenuItem
+                  {/* <MenuItem
                     image={"/assets/about-us.svg"}
                     title={"Meet the Team"}
                     subtitle={"The people behind every idea"}
                     link={"/about-us#meet-the-team"}
                     setOpen={setIsMobileMenuOpen}
-                  />
+                  /> */}
                 </div>
                 <button
                   onClick={() => {
