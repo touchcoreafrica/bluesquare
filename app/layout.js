@@ -23,7 +23,25 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-gray-800`}>
         <Script
           strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=GTM-KWNTQ687"
+        />
+        <Script
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-R7RXFDNY7Q"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GTM-KWNTQ687', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
         />
         <Script
           id="google-analytics"
