@@ -22,6 +22,8 @@ export default function RootLayout({ children }) {
   const GA_ID = "G-R7RXFDNY7Q";
   const FB_PIXEL_ID = "2005266043198777";
 
+  // console.log("object")
+
   return (
     <html lang="en">
       <body className={`${inter.className} bg-gray-800`}>
