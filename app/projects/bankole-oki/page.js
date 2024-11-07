@@ -68,6 +68,8 @@ export default function Page() {
     };
   }, []);
 
+  // console.log("object")
+
   useEffect(() => {
     // Adjust the values to control the opacity change
     const maxScroll = window.innerHeight; // Adjust this value to determine when the banner is fully scrolled
