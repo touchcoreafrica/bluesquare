@@ -58,6 +58,7 @@ const Footer = () => {
                   <Link href={"resources"}>Resources</Link>
                   <Link href={"FAQ"}>FAQs</Link>
                   <Link href={"contact-us"}>Contact Us</Link>
+                  <Link href={"/privacy-policy"}>Privacy Policy</Link>
                 </div>
                 <div className="hidden flex-col gap-4">
                   <p>Legal Terms & Conditions</p>

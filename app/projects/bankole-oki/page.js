@@ -4,7 +4,6 @@ import CheckIcon from "@mui/icons-material/Check";
 import ApartmentCard from "@/components/ApartmentCard/ApartmentCard";
 import Button from "@/components/Button/Button";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import Image from "@/components/Image/Image";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -25,18 +24,36 @@ export default function Page() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const controls = useAnimation();
   const siteImages = [
-    "/assets/the-jade-manor-site1.png",
-    "/assets/the-jade-manor-site2.png",
-    "/assets/the-jade-manor-site3.png",
-    "/assets/the-jade-manor-site4.png",
-    "/assets/the-jade-manor-site5.png",
+    "/bankoleoki1.jpg",
+    "/bankoleoki2.jpg",
+    "/bankoleoki3.jpg",
+    "/bankoleoki4.png",
+    "/bankoleoki5.png",
+    "/bankoleoki6.png",
+    "/bankoleoki7.jpg",
+    "/bankoleoki8.jpg",
+    "/bankoleoki9.jpg",
+    "/bankoleoki10.jpg",
+    "/bankoleoki11.png",
+    "/bankoleoki12.jpg",
+    "/bankoleoki13.jpg",
+    "/bankoleoki14.jpg",
   ];
   const siteBigImages = [
-    "/assets/the-jade-manor-site1.png",
-    "/assets/the-jade-manor-site2.png",
-    "/assets/the-jade-manor-site3.png",
-    "/assets/the-jade-manor-site4.png",
-    "/assets/the-jade-manor-site5.png",
+    "/bankoleoki1.jpg",
+    "/bankoleoki2.jpg",
+    "/bankoleoki3.jpg",
+    "/bankoleoki4.png",
+    "/bankoleoki5.png",
+    "/bankoleoki6.png",
+    "/bankoleoki7.jpg",
+    "/bankoleoki8.jpg",
+    "/bankoleoki9.jpg",
+    "/bankoleoki10.jpg",
+    "/bankoleoki11.png",
+    "/bankoleoki12.jpg",
+    "/bankoleoki13.jpg",
+    "/bankoleoki14.jpg",
   ];
 
   useEffect(() => {
@@ -65,7 +82,7 @@ export default function Page() {
 
   return (
     <div className={`flex flex-col bg-white`}>
-      <section className="h-[85vh] w-full bg-cover bg-[url('/assets/the-jade-manor-banner.png')] flex items-center justify-center">
+      <section className="h-[85vh] w-full bg-cover bg-[url('/bankoleoki5.png')] flex items-center justify-center">
         <motion.div
           className="banner-overlay"
           initial={{ background: "rgba(0, 0, 0, 0)" }}
@@ -75,13 +92,13 @@ export default function Page() {
           <h1
             className={`headerFont text-5xl text-center md:text-[100px] text-[#DAB797]`}
           >
-            THE JADE MANOR
+            BANKOLE OKI
           </h1>
-          <h1
+          {/* <h1
             className={`headerFont text-2xl md:text-4xl text-center text-[#DAB797]`}
           >
             Luxury Living in Oniru
-          </h1>
+          </h1> */}
         </div>
       </section>
       <section className=" flex sticky top-40 pr-20 md:mb-[-300px] w-fit self-end">
@@ -210,15 +227,15 @@ export default function Page() {
       </section>
       <section className="flex items-center md:p-20 p-4 overflow-visible py-5 gap-4">
         <div className="flex flex-col gap-5 md:w-[70%]">
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <p className={`text-[#6D6E71] `}>
               Plot 13, Onigefun road Oniru, VI
             </p>
             <p className={`headerFont text-3xl text-[#CAA969]`}>
               THE JADE MANOR
             </p>
-          </div>
-          <div className="flex flex-col gap-4">
+          </div> */}
+          {/* <div className="flex flex-col gap-4">
             <p className={`bodyFont text-[#6D6E71] leading-[190%]`}>
               The Jade Manor stands as a testament to architectural brilliance,
               seamlessly blending contemporary design with timeless aesthetics.
@@ -253,7 +270,7 @@ export default function Page() {
               appliances, custom cabinetry, and panoramic views that capture the
               essence of Oniru&apos;s charm.
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="  w-[30%]"></div>
       </section>

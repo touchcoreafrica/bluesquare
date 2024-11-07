@@ -99,11 +99,11 @@ const ProjectMap = () => {
                 image={"/assets/gazaniaParkList1.png"}
               />
               <ProjectListItem
-                link={"/projects/the-jade-manor"}
-                name={"The Jade Manor"}
-                address={"Onigefun street, Oniru, VI"}
+                link={"/projects/bankole-oki"}
+                name={"Bankole oki"}
+                address={""}
                 startFrom={"$10,000"}
-                image={"/assets/theJadeManorList.png"}
+                image={"/bankoleoki5.png"}
               />
             </div>
           </div>

@@ -155,9 +155,9 @@ const Header = ({ className }) => {
                     type: "link",
                   },
                   {
-                    title: "The Jade Manor",
-                    link: "/projects/the-jade-manor",
-                    image: "/assets/the-jade-manor-site4.png",
+                    title: "Bankole Oki",
+                    link: "/projects/bankole-oki",
+                    image: "/bankoleoki5.png",
                     subTitle: "Onigefun street, Oniru, VI",
                     type: "link",
                   },
@@ -800,9 +800,9 @@ const Header = ({ className }) => {
                     setProjectMenu={setProjectMenu}
                   />
                   <ProjectsMenuItem
-                    title="The Jade Manor"
+                    title="Bankole oki"
                     subTitle=""
-                    image="/assets/the-jade-manor-site4.png"
+                    image="/bankoleoki5.png"
                     link="/projects/the-jade-manor"
                     setMenuState={setIsMobileMenuOpen}
                     setProjectMenu={setProjectMenu}
