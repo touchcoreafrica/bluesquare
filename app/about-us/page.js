@@ -99,7 +99,7 @@ const team = [
 
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const controls = useAnimation();
+  // const controls = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -113,28 +113,28 @@ const Page = () => {
     };
   }, []);
 
-  useEffect(() => {
-    // Adjust the values to control the opacity change
-    const maxScroll = window.innerHeight * 0.75; // Adjust this value to determine when the banner is fully scrolled
+  // useEffect(() => {
+  //   // Adjust the values to control the opacity change
+  //   const maxScroll = window.innerHeight * 0.75; // Adjust this value to determine when the banner is fully scrolled
 
-    const opacity = Math.min(1, scrollPosition / maxScroll);
+  //   const opacity = Math.min(1, scrollPosition / maxScroll);
 
-    controls.start({
-      background: `rgba(0, 0, 0, ${opacity})`,
-      transition: { duration: 0, delay: 0 },
-    });
-  }, [scrollPosition, controls]);
+  //   controls.start({
+  //     background: `rgba(0, 0, 0, ${opacity})`,
+  //     transition: { duration: 0, delay: 0 },
+  //   });
+  // }, [scrollPosition, controls]);
 
   return (
     <div className="bg-white">
       <SlideFromRtoL>
         <div className="absolute top-0 bg-cover bg-[url('/assets/AboutUsBan.png')] h-[85vh] bg-origin-content w-full bg-no-repeat" />
         <section className={`h-[85vh] w-full flex items-end justify-end`}>
-          <motion.div
+          {/* <motion.div
             className="banner-overlay"
             initial={{ background: "rgba(0, 0, 0, 0)" }}
             animate={controls}
-          ></motion.div>
+          ></motion.div> */}
           <p className={`z-10 bg-white p-5 text-3xl md:text-5xl headerFont`}>
             About Us
           </p>
@@ -242,31 +242,31 @@ const Page = () => {
             </div>
             <div className="flex flex-col md:flex-row flex-wrap pt-5 gap-5 justify-between">
               <div className="flex flex-col gap-5 md:w-[48%] md:mb-20">
-                <h2 className={`headerFont text-2xl md:text-4xl`}>
+                <h2 className={`headerFont text-2xl md:text-4xl text-black`}>
                   Our Mission
                 </h2>
                 <p
                   className={`bodyFont text-black/60 text-[18px] leading-[190%]`}
                 >
-                  To consistently deliver modern, functional, secure and
-                  innovative homes, for people to truly live well whilst
-                  providing sustainable investment opportunities.
+                  To be one of the most successful real estate firms in Nigeria
+                  by developing and selling innovative and creatively designed
+                  living spaces at a cost-effective price point while
+                  maintaining excellent customer service at all touch points.
                 </p>
               </div>
               <div className="flex flex-col gap-5 md:w-[48%] md:mb-20">
-                <h2 className={`headerFont text-2xl md:text-4xl`}>
+                <h2 className={`headerFont text-2xl md:text-4xl text-black`}>
                   Our Vision
                 </h2>
                 <p
                   className={`bodyFont text-black/60 text-[18px] leading-[190%]`}
                 >
-                  Our vision is to set the standard for successful real estate
-                  investment in Nigeria and across Africa, driven by integrity,
-                  innovation, and a deep-seated commitment to excellence.
+                  To build a brand synonymous with designing, developing, and
+                  maintaining stunning urban communities
                 </p>
               </div>
               <div className="flex flex-col gap-5 md:w-[48%]">
-                <h2 className={`headerFont text-2xl md:text-4xl`}>
+                <h2 className={`headerFont text-2xl md:text-4xl text-black`}>
                   Core Values
                 </h2>
                 <div className="flex flex-col gap-3">
@@ -291,7 +291,7 @@ const Page = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-5 md:w-[48%]">
-                <h2 className={`headerFont text-2xl md:text-4xl`}>
+                <h2 className={`headerFont text-2xl md:text-4xl text-black`}>
                   Our Services
                 </h2>
                 <div className="flex flex-col gap-3">
