@@ -72,11 +72,11 @@ export default function Page() {
   return (
     <div className={`flex flex-col bg-white`}>
       <section className="h-[85vh] w-full bg-cover bg-[url('/assets/gazania-park-banner.png')] flex items-center justify-center">
-        <motion.div
+        {/* <motion.div
           className="banner-overlay"
           initial={{ background: "rgba(0, 0, 0, 0)" }}
           animate={controls}
-        ></motion.div>
+        ></motion.div> */}
         <div className="flex flex-col">
           <h1 className={`headerFont text-5xl md:text-[100px] text-[#DAB797]`}>
             ONIRU
