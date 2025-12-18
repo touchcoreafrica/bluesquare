@@ -49,6 +49,7 @@ export default function Page() {
       transition: { duration: 0, delay: 0 },
     });
   }, [scrollPosition, controls]);
+  // console.log("object")
 
   return (
     <div className={`flex flex-col bg-white`}>
