@@ -6,18 +6,24 @@ import Link from "next/link";
 import EmailSubscriptionForm from "../EmailSubscriptionForm/EmailSubscriptionForm";
 import Whatsapp from "../Whatsapp";
 
-const Footer = () => {
+const Footer = ({ noSubscriptionForm }) => {
   return (
-    <section className=" min-h-screen flex flex-col">
+    <section
+      className={`${noSubscriptionForm ? "" : "min-h-screen "} flex flex-col`}
+    >
       <Whatsapp />
-      <div className={"h-[400px] flex items-end"}>
-        <div
-          className={` h-3/4 w-full bg-cover bg-[url('/assets/footerBg.png')] `}
-        ></div>
-      </div>
+      {!noSubscriptionForm ? (
+        <div className={"h-[400px] flex items-end"}>
+          <div
+            className={` h-3/4 w-full bg-cover bg-[url('/assets/footerBg.png')] `}
+          ></div>
+        </div>
+      ) : (
+        <></>
+      )}
       <div className="h-1/2 bg-[#222222]">
         <div className="flex flex-col items-center">
-          <EmailSubscriptionForm />
+          {!noSubscriptionForm ? <EmailSubscriptionForm /> : <></>}
           <div className="flex flex-col md:flex-row gap-10 justify-between py-10 w-full px-4 md:px-24">
             <div className="flex flex-col gap-4 justify-between">
               <div className="flex gap-1 md:gap-4 items-start flex-col md:flex-row">
