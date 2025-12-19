@@ -1,7 +1,11 @@
-import React from "react";
+"use-client";
+
+import React, { useState } from "react";
 import { FiCheck } from "react-icons/fi";
+import RequestFormModal from "./RequestFormModal";
 
 function WhyPerfectSection() {
+  const [open, setOpen] = useState();
   const left = [
     "Modern, luxury-finished 2 & 3 bedroom apartments",
     "Secure estate, top-tier infrastructure",
@@ -25,6 +29,7 @@ function WhyPerfectSection() {
 
   return (
     <section className="w-full bg-white">
+      <RequestFormModal open={open} setOpen={setOpen} />
       <div className="mx-auto max-w-6xl px-5 py-14 md:py-20">
         <h2 className="headerFont text-4xl md:text-5xl text-gray-900 tracking-wide">
           Why This Property Is Perfect for You
@@ -54,7 +59,10 @@ function WhyPerfectSection() {
         </div>
 
         <div className="mt-10">
-          <button className="rounded-sm bg-blue-600 px-10 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition">
+          <button
+            className="rounded-sm bg-blue-600 px-10 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition"
+            onClick={() => setOpen(true)}
+          >
             Book a Site Visit
           </button>
         </div>

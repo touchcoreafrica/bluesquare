@@ -1,11 +1,16 @@
-import React from "react";
+"use-client";
+
+import React, { useState } from "react";
+import RequestFormModal from "./RequestFormModal";
 
 function HeroSection() {
+  const [open, setOpen] = useState(false);
   return (
     <section className="relative h-[85vh] w-full bg-cover bg-center bg-[url('/assets/gazania-park-banner.png')]">
       {/* Overlay */}
 
       {/* Content */}
+      <RequestFormModal open={open} setOpen={setOpen} />
       <div className="relative z-10 h-full flex items-center justify-center px-4">
         <div className="max-w-5xl text-center flex flex-col items-center gap-6">
           {/* Top pill */}
@@ -28,7 +33,10 @@ function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
-            <button className=" bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition">
+            <button
+              className=" bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition"
+              onClick={() => setOpen(true)}
+            >
               Book a Viewing
             </button>
 
