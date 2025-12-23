@@ -2,15 +2,25 @@
 
 import React, { useState } from "react";
 import RequestFormModal from "./RequestFormModal";
+import PriceListModal from "./PriceListModal";
 
 function HeroSection() {
   const [open, setOpen] = useState(false);
+  const [priceModal, setPriceModal] = useState(false);
   return (
     <section className="relative h-[85vh] w-full bg-cover bg-center bg-[url('/assets/gazania-park-banner.png')]">
       {/* Overlay */}
 
       {/* Content */}
       <RequestFormModal open={open} setOpen={setOpen} />
+      <PriceListModal
+        open={priceModal}
+        setOpen={setPriceModal}
+        onGetStarted={() => {
+          setPriceModal(false);
+          setOpen(true);
+        }}
+      />
       <div className="relative z-10 h-full flex items-center justify-center px-4">
         <div className="max-w-5xl text-center flex flex-col items-center gap-6">
           {/* Top pill */}
@@ -42,7 +52,7 @@ function HeroSection() {
 
             <button
               className=" border border-white/60 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition"
-              onClick={() => setOpen(true)}
+              onClick={() => setPriceModal(true)}
             >
               Get Price List
             </button>
