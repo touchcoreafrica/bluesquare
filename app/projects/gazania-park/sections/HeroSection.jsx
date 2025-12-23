@@ -40,7 +40,10 @@ function HeroSection() {
               Book a Viewing
             </button>
 
-            <button className=" border border-white/60 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition">
+            <button
+              className=" border border-white/60 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition"
+              onClick={() => setOpen(true)}
+            >
               Get Price List
             </button>
           </div>
