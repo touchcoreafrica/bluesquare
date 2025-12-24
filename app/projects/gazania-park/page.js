@@ -32,28 +32,6 @@ export default function Page() {
   const [showThesis, setShowThesis] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const controls = useAnimation();
-  const siteImages = [
-    "/assets/gazania-park-site1.png",
-    "/assets/gazania-park-site2.png",
-    "/assets/gazania-park-site3.png",
-    "/assets/gazania-park-site4.png",
-    "/assets/gazania-park-site5.png",
-    "/assets/gazania-park-site6.png",
-    "/assets/gazania-park-site7.png",
-    "/assets/gazania-park-site8.png",
-    "/assets/gazania-park-site9.png",
-  ];
-  const siteBigImages = [
-    "/assets/gazania-park-site1.png",
-    "/assets/gazania-park-site2.png",
-    "/assets/gazania-park-site3.png",
-    "/assets/gazania-park-site4.png",
-    "/assets/gazania-park-site5.png",
-    "/assets/gazania-park-site6.png",
-    "/assets/gazania-park-site7.png",
-    "/assets/gazania-park-site8.png",
-    "/assets/gazania-park-site9.png",
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
