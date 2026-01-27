@@ -20,7 +20,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const GTM_ID = "GTM-KWNTQ687";
+  // const GTM_ID = "GTM-KWNTQ687";
+  const GTM_ID = "GTM-W77NSV6Z";
   const FB_PIXEL_ID = "2377064336045629"; // ✅ your pixel
 
   return (
